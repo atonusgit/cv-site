@@ -37,7 +37,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 		?>">
 	<meta property="og:title" content="Anton Valle - CV">
-	<meta property="og:image" content="http://www.antonvalle.fi/cv/img/anton_paja_big.jpg">
+	<meta property="og:image" content="http://www.antonvalle.fi/cv/img/anton_paja.jpg">
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="<?php
 
@@ -82,6 +82,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 		?>">
 	<meta property="og:site_name" content="Anton Valle - CV">
+	<meta name="author" content="Anton Valle">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
