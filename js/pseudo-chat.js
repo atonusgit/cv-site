@@ -7,22 +7,26 @@ if ( get( 'lang' ) == 'fi' ) {
 	var a = "Hei ystävä, mikä toi sinut tänne?"
 	var b = "Mukavaa. Musiikki oli pitkään päätyöni. Olen säveltänyt musiikkia mm. elokuviin, peleihin, trackereille ❤️, kuoroille, orkestereille ja teslakäämille ⚡⚡⚡ Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
 	var c = "Siistiä! Haaveilin koodaustaidosta jo varhain, mutta luulin, ettei ohjelmointi olisi tällaisen taiteilijahörhön hommaa <epic>🤦</epic>. Löysin todellisen kipinän koodaamiseen yllättäen sävellysopettajani kautta. Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
-	var d = "Kiitos viestistäsi! Olen pian yhteydessä!"
-	var e = "Musiikki"
-	var f = "Ohjelmointi"
-	var g = "Hei Anton, olen ..."
-	var h = "Lähetä"
+	var d = "Selvä. Selaile rauhassa 😌 Saatoit jo huomata, että tämä sivu on täynnä JavaScriptiä, mutta tiesitkö, että se toimii myös moitteetta ilman? Mikäli sinulla herää kysyttävää, niin laita rohkeasti viesti ja kerro kuinka voisin olla avuksi?"
+	var e = "Kiitos viestistäsi! Olen pian yhteydessä!"
+	var textMusic = "Musiikki"
+	var textProgramming = "Ohjelmointi"
+	var textJustBrowsing = "Selailen vain..."
+	var textTextareaPlaceholder = "Hei Anton, olen ..."
+	var textSubmit = "Lähetä"
 
 } else {
 
 	var a = "Hello friend, what brings you here?"
 	var b = "Cool. For a long time music was my main profession. I\'ve scored music for i.e. movies, games, trackers ❤️, choirs, orchestras and a tesla coil ⚡⚡⚡ Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
 	var c = "Great! I was dreaming about acquiring the skills of coding at an early age, but I thought programming wouldn't be for such an artisy goof like me <epic>🤦</epic>. Surprisingly, I got the spark for coding from my composing teacher. Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
-	var d = "Thank you for your message! I\'ll be in touch with you shortly!"
-	var e = "Music"
-	var f = "Programming"
-	var g = "Hi Anton, I\'m ..."
-	var h = "Send"
+	var d = "Ok. Feel free to continue browsing 😌 You may have noticed that this site is fully packed with JavaScript, but did you know that it also works completely without it? If you have any questions, please don\'t hesitate to drop a message and tell me how can I help you."
+	var e = "Thank you for your message! I\'ll be in touch with you shortly!"
+	var textMusic = "Music"
+	var textProgramming = "Programming"
+	var textJustBrowsing = "I\\'m just browsing..."
+	var textTextareaPlaceholder = "Hi Anton, I\'m ..."
+	var textSubmit = "Send"
 
 }
 
@@ -31,7 +35,8 @@ var antonMessages = {
 	0: a,
 	1: b,
 	2: c,
-	3: d
+	3: d,
+	4: e
 
 }
 
@@ -45,8 +50,6 @@ window.launchChat = async () => {
 		if ( bottom_of_window - 200 > bottom_of_object
 			&& launchChatLaunched == false ) {
 
-			let chatResponseText = e
-
 			await updateChat( chatIndex )
 			$( '#chat-area' ).append(
 				'<div id="chat-visitor-0" class="row justify-content-center">\
@@ -54,9 +57,11 @@ window.launchChat = async () => {
 						<div class="container">\
 							<div class="row align-items-center justify-content-end form-group">\
 								<div class="col text-right">\
-									<a href="javascript:;" onclick="handleChatResponse( { 0: 1, 1: \'' + e + '\' } )" class="btn btn-light my-1">' + e + '\
+									<a href="javascript:;" onclick="handleChatResponse( { 0: 1, 1: \'' + textMusic + '\' } )" class="btn btn-light my-1">' + textMusic + '\
 									</a>\
-									<a href="javascript:;" onclick="handleChatResponse( { 0: 2, 1: \'' + f + '\' } )" class="btn btn-light my-1">' + f + '\
+									<a href="javascript:;" onclick="handleChatResponse( { 0: 2, 1: \'' + textProgramming + '\' } )" class="btn btn-light my-1">' + textProgramming + '\
+									</a>\
+									<a href="javascript:;" onclick="handleChatResponse( { 0: 3, 1: \'' + textJustBrowsing + '\' } )" class="btn btn-light my-1">' + textJustBrowsing.replace( '\\', '' ) + '\
 									</a>\
 								</div>\
 								<div class="col-auto">\
@@ -180,9 +185,9 @@ const showContactForm = ( e ) => {
 										class="form-control"\
 										rows="5"\
 										name="message"\
-										placeholder="' + g + '"></textarea>\
+										placeholder="' + textTextareaPlaceholder + '"></textarea>\
 								</div>\
-								<a href="javascript:;" onclick="sendMessage( 1 )" id="sendMessageButton" class="btn btn-light btn-block">' + h + '</a>\
+								<a href="javascript:;" onclick="sendMessage( ' + e + ' )" id="sendMessageButton" class="btn btn-light btn-block">' + textSubmit + '</a>\
 							</form>\
 						</div>\
 						<div class="col-lg-3">\
@@ -248,15 +253,15 @@ window.sendMessage = ( e ) => {
 								</div>\
 							</div>\
 						</div>' )
-					await updateChat( 3 )
+					await updateChat( 4 )
 
 				}, 2500 )
 
 			} else {
 
 				$( '#sendMessageButton' ).addClass( 'btn-light' )
-				$( '#sendMessageButton' ).html( h )
-				alert( 'error' )
+				$( '#sendMessageButton' ).html( textSubmit )
+				console.log( e )
 
 			}
 
@@ -264,7 +269,7 @@ window.sendMessage = ( e ) => {
 		error: ( e ) => {
 
 			$( '#sendMessageButton' ).addClass( 'btn-light' )
-			$( '#sendMessageButton' ).html( h )
+			$( '#sendMessageButton' ).html( textSubmit )
 			console.log( e )
 
 		}

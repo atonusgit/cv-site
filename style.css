@@ -9,6 +9,9 @@
 #corder-thingie {
 	height: 75px;
 }
+#corner-name {
+	display: none;
+}
 .badge-icon {
 	min-width: 1em;
 	max-width: 1em;

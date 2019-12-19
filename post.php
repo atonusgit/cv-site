@@ -20,7 +20,11 @@ if ( isset( $_POST['initChoice'] )
 				break;
 
 			case '3':
-				$init_choice = 'No Javascript';
+				$init_choice = 'Selailen vain...';
+				break;
+
+			case '4':
+				$init_choice = 'No JavaScript';
 				break;
 
 		}
@@ -36,20 +40,26 @@ if ( isset( $_POST['initChoice'] )
 
 	}
 
-	if ( $_POST['initChoice'] == 3 ) {
+	if ( $_POST['initChoice'] == 4 ) {
 
 		header( "Location: http://www.antonvalle.fi/cv/?lang=" . $_POST['lang'] . "&thankyou=1" );
 
 	} else {
 
-		echo json_encode($response);
+		echo json_encode( $response );
 		die;
 
 	}
 
-} else {
+} else if ( isset( $_POST['lang'] ) ) {
 
 	header( "Location: http://www.antonvalle.fi/cv/?lang=" . $_POST['lang'] . "&empty=1" );
+
+} else {
+
+	$response['response'] = "FALSE";
+	echo json_encode( $response );
+	die;
 
 }
 

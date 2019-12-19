@@ -93,6 +93,19 @@ $portrait = 'img/anton_portrait.jpg';
 	<link rel="icon" href="<?php echo $portrait; ?>" sizes="32x32">
 	<link rel="icon" href="<?php echo $portrait; ?>" sizes="192x192">
 	<link rel="apple-touch-icon-precomposed" href="<?php echo $portrait; ?>">
+	
+	<!-- Begin Inspectlet Asynchronous Code -->
+	<script type="text/javascript">
+	(function() {
+	window.__insp = window.__insp || [];
+	__insp.push(['wid', 1090028467]);
+	var ldinsp = function(){
+	if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1090028467&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+	setTimeout(ldinsp, 0);
+	})();
+	</script>
+	<!-- End Inspectlet Asynchronous Code -->
+
 	<noscript>
 		<style type="text/css">
 			#navbar {
@@ -100,6 +113,20 @@ $portrait = 'img/anton_portrait.jpg';
 				box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.15);
 				-webkit-transition: all 0.2s ease-in-out;
 				border-bottom: 1px solid #17a2b847;
+			}
+			.js-content {
+				display: none;
+			}
+			.js-content > a > div#corner-logo {
+				display: none;
+			}
+			.js-content > a > div#corner-name {
+				display: block;
+			}
+			@media (max-width: 991px) {
+				a.js-content {
+					display: block;
+				}
 			}
 		</style>
 	</noscript>
@@ -109,21 +136,21 @@ $portrait = 'img/anton_portrait.jpg';
 		<header id="header" role="banner" class="sticky-top">
 			<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
 				<div class="container py-3">
-					<div id="corder-thingie" class="d-flex align-items-center">
+					<div id="corder-thingie" class="d-flex align-items-center js-content">
 						<a href="http://www.antonvalle.fi/cv" class="navbar-brand custom-logo-link" rel="home">
 							<div id="corner-logo">
 								<img src="img/signature-solid.svg">
 							</div>
-							<div id="corner-name" style="display: none;">
+							<div id="corner-name">
 								<h5 class="mb-0">Anton Valle</h5>
 								<p class="mb-0 small text-secondary">Curriculum vitae</p>
 							</div>
 						</a>
 					</div>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler js-content" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div id="navbarNavDropdown" class="collapse navbar-collapse">
+					<div id="navbarNavDropdown" class="collapse navbar-collapse js-content">
 						<ul id="main-menu" class="navbar-nav ml-auto">
 							<li id="menu-item-personal-statement" class="nav-item">
 								<a title="Personal statement" href="#personal-statement" class="nav-link"><?php
@@ -227,6 +254,36 @@ $portrait = 'img/anton_portrait.jpg';
 							</li>
 						</ul>
 					</div>
+					<noscript>
+						<a href="?lang=<?php
+
+							if ( isset( $_GET['lang'] )
+								&& $_GET['lang'] == 'fi' ) {
+
+								echo 'en';
+
+							} else {
+
+								echo 'fi';
+
+							}
+
+							?>" class="btn btn-secondary js-content"><?php
+
+							if ( isset( $_GET['lang'] )
+								&& $_GET['lang'] == 'fi' ) {
+
+								echo 'ENG';
+
+							} else {
+
+								echo 'FI';
+
+							}
+
+							?>
+						</a>
+					</noscript>
 				</div>
 			</nav>
 		</header>
@@ -1157,7 +1214,7 @@ $portrait = 'img/anton_portrait.jpg';
 							<div class="row justify-content-center py-5">
 								<div class="col-md-8 text-center text-light">
 									<form id="contact-me" action="post.php" method="post">
-										<input type="hidden" name="initChoice" value="3">
+										<input type="hidden" name="initChoice" value="4">
 										<input type="hidden" name="lang" value="<?php
 
 											if ( isset( $_GET['lang'] )
