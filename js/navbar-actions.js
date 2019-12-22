@@ -150,3 +150,13 @@ window.updateCanvas = () => {
 	} )
 
 }
+
+$( '.nav-link' ).on( 'click', () => {
+
+	if ( 992 > window.innerWidth ) {
+
+		$( '.navbar-toggler' ).click()
+
+	}
+
+} )

@@ -1,4 +1,3 @@
-var urlParameters = window.location.search
 var launchChatLaunched = false
 var chatIndex = 0
 

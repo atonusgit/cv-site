@@ -31,7 +31,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 		} else {
 
-			echo "Hi, here's my new CV, where you can find my work and education history. If you wish to know more, I'm happy to tell you more.";
+			echo "Hi, here's my new CV, where you can find my work and education history. If you wish to know more, please don't hesitate to ask!";
 
 		}
 
@@ -62,7 +62,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 		} else {
 
-			echo "Hi, here's my new CV, where you can find my work and education history. If you wish to know more, I'm happy to tell you more.";
+			echo "Hi, here's my new CV, where you can find my work and education history. If you wish to know more, please don't hesitate to ask!";
 
 		}
 
@@ -300,11 +300,11 @@ $portrait = 'img/anton_portrait.jpg';
 								if ( isset( $_GET['lang'] )
 									&& $_GET['lang'] == 'fi' ) {
 
-									echo "Iki-innostunut ohjelmistokehittäjä, jolla on <a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank'>vahva urahistoria musiikkialalta.</a>";
+									echo "Iki-innostunut ohjelmistokehittäjä, jolla on vahva urahistoria musiikkialalta.</p><p class='small'><a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank' class='text-info'>Lue uranvaihdostarinani</a>";
 
 								} else {
 
-									echo "Forever enthusiastic software developer with <a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank'>a strong career background in music.</a>";
+									echo "Forever enthusiastic software developer with a strong career background in music.</p><p class='small'><a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank' class='text-info'>Read my career shifting story (in Finnish)</a>";
 
 								}
 
@@ -602,11 +602,11 @@ $portrait = 'img/anton_portrait.jpg';
 											if ( isset( $_GET['lang'] )
 												&& $_GET['lang'] == 'fi' ) {
 
-												echo "Superlect Ltd, edtech-alusta - Osa-perustaja ja CTO";
+												echo "Superlect Oy, edtech-alusta - Osa-perustaja ja CTO";
 
 											} else {
 
-												echo "Superlect Ltd, edtech platform - Co-founder and CTO";
+												echo "Superlect Ltd., edtech platform - Co-founder and CTO";
 
 											}
 
@@ -669,7 +669,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 												} else {
 
-													echo "Read more";
+													echo "Read more (in Finnish)";
 
 												}
 
@@ -684,11 +684,11 @@ $portrait = 'img/anton_portrait.jpg';
 											if ( isset( $_GET['lang'] )
 												&& $_GET['lang'] == 'fi' ) {
 
-												echo "MASSIVE Helsinki, mainostoimisto - Osa-perustaja, Audio Director ja CEO";
+												echo "MASSIVE Helsinki Oy, mainostoimisto - Osa-perustaja, Audio Director ja CEO";
 
 											} else {
 
-												echo "MASSIVE Helsinki, AD agency - Co-founder, Audio Director and CEO";
+												echo "MASSIVE Helsinki Ltd., AD agency - Co-founder, Audio Director and CEO";
 
 											}
 
