@@ -456,16 +456,16 @@ $portrait = 'img/anton_portrait.jpg';
 									}
 
 									?>">PHP</button>
-								<button type="button" class="btn btn-lg btn-info mx-2 my-2" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<?php
+								<button type="button" onclick="window.open('https://github.com/atonusgit/cv-site')" class="btn btn-lg btn-info mx-2 my-2" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<?php
 
 									if ( isset( $_GET['lang'] )
 										&& $_GET['lang'] == 'fi' ) {
 
-										echo "Pidin Githubia pitkään vain pilvivarmuuskopiona. Kun projektien koko sekä monimutkaisuus kasvoivat aloin pikkuhiljaa ottamaan käyttöön versoilun (branching), uusioalustamisen (rebasing) ja sulauttamisen (merging).";
+										echo "Klikkaa Git-nappia vilkaistaksesi miten tämä CV-sivu on tehty.";
 
 									} else {
 
-										echo "For a long time I used Github as a cloud backup only. When projects expanded and complexity grew I started gradually utiliatize branching, rebasing and merging.";
+										echo "Click the Git-button to see how this CV-site is done.";
 
 									}
 
