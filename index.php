@@ -650,26 +650,39 @@ $portrait = 'img/anton_portrait.jpg';
 												if ( isset( $_GET['lang'] )
 													&& $_GET['lang'] == 'fi' ) {
 
-													echo "Vieraile alustassa";
+													echo "Tutustu työnäytteeseen";
 
 												} else {
 
-													echo "Visit the platform";
+													echo "Check out the work sample";
 
 												}
 
 												?>
-											</a> <a href="https://www.linkedin.com/pulse/esittelyss%C3%A4-superlect-mit%C3%A4-opin-sit%C3%A4-tehdess%C3%A4-anton-valle/" class="badge badge-light" target="_blank">
+											</a> <a href="https://www.linkedin.com/pulse/esittelyss%C3%A4-superlect-mit%C3%A4-opin-sit%C3%A4-tehdess%C3%A4-anton-valle/" class="badge badge-light" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<?php
+
+												if ( isset( $_GET['lang'] )
+													&& $_GET['lang'] == 'fi' ) {
+
+													echo "Esittelyssä Superlect - Mitä opin sitä tehdessä?";
+
+												} else {
+
+													echo "Esittelyssä Superlect - Mitä opin sitä tehdessä? (in Finnish)";
+
+												}
+
+												?>">
 												<img class="badge-icon" src="img/book-open-solid.svg"> <?php
 
 												if ( isset( $_GET['lang'] )
 													&& $_GET['lang'] == 'fi' ) {
 
-													echo "Lue lisää";
+													echo "Lue artikkeli";
 
 												} else {
 
-													echo "Read more (in Finnish)";
+													echo "Read an article (in Finnish)";
 
 												}
 
@@ -870,7 +883,7 @@ $portrait = 'img/anton_portrait.jpg';
 											if ( isset( $_GET['lang'] )
 												&& $_GET['lang'] == 'fi' ) {
 
-												echo "Liiketoiminnan kehittäminen, markkinointi, myynti, johtaminen, de, tiiminrakentaminen, pedagogiikka, rahoituksen hakeminen ja liikeidean esittäminen (pitching).";
+												echo "Liiketoiminnan kehittäminen, markkinointi, myynti, johtaminen, UX-UI, tiiminrakentaminen, pedagogiikka, rahoituksen hakeminen ja liikeidean esittäminen (pitching).";
 
 											} else {
 
