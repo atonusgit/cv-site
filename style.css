@@ -128,3 +128,27 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+@media print {
+	.btn-info {
+		border-color: #555;
+	}
+	.btn-info, .text-info {
+		color: #000 !important;
+	}
+	a {
+		text-decoration: none !important;
+	}
+	.appear-on-scroll {
+		margin-top: 0px !important;
+		opacity: 1 !important;
+	}
+	#testimonials,
+	ul > li > p:nth-of-type(2),
+	ul > li > p:nth-of-type(3) {
+		font-size: 80%;
+		font-weight: 400;
+	}
+	.no-print, .no-print * {
+		display: none !important;
+	}
+}

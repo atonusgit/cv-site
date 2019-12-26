@@ -134,7 +134,7 @@ $portrait = 'img/anton_portrait.jpg';
 </head>
 <body>
 	<div id="wrapper">
-		<header id="header" role="banner" class="sticky-top">
+		<header id="header" role="banner" class="sticky-top no-print">
 			<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
 				<div class="container py-3">
 					<div id="corder-thingie" class="d-flex align-items-center js-content">
@@ -288,7 +288,7 @@ $portrait = 'img/anton_portrait.jpg';
 				</div>
 			</nav>
 		</header>
-		<div id="header-blur"></div>
+		<div id="header-blur" class="no-print"></div>
 		<div id="content-wrapper">
 			<section id="name-face" class="pb-5" role="main">
 				<div class="container">
@@ -300,11 +300,11 @@ $portrait = 'img/anton_portrait.jpg';
 								if ( isset( $_GET['lang'] )
 									&& $_GET['lang'] == 'fi' ) {
 
-									echo "Iki-innostunut ohjelmistokehittäjä, jolla on vahva urahistoria musiikkialalta.</p><p class='small'><a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank' class='text-info'>Lue uranvaihdostarinani</a>";
+									echo "Iki-innostunut ohjelmistokehittäjä, jolla on vahva urahistoria musiikkialalta.</p><p class='small'><a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank' class='text-info no-print'>Lue uranvaihdostarinani</a>";
 
 								} else {
 
-									echo "Forever enthusiastic software developer with a strong career background in music.</p><p class='small'><a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank' class='text-info'>Read my career shifting story (in Finnish)</a>";
+									echo "Forever enthusiastic software developer with a strong career background in music.</p><p class='small'><a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank' class='text-info no-print'>Read my career shifting story (in Finnish)</a>";
 
 								}
 
@@ -602,11 +602,11 @@ $portrait = 'img/anton_portrait.jpg';
 											if ( isset( $_GET['lang'] )
 												&& $_GET['lang'] == 'fi' ) {
 
-												echo "Superlect Oy, edtech-alusta - Osa-perustaja ja CTO";
+												echo "Superlect Oy, ammattikouluttamisen alusta - Osa-perustaja ja CTO";
 
 											} else {
 
-												echo "Superlect Ltd., edtech platform - Co-founder and CTO";
+												echo "Superlect Ltd., platform for professional education - Co-founder and CTO";
 
 											}
 
@@ -643,7 +643,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 											?>
 										</p>
-										<p class="mb-0">
+										<p class="mb-0 no-print">
 											<a href="https://app.superlect.com" class="badge badge-light" target="_blank">
 												<img class="badge-icon" src="img/mouse-pointer-solid.svg"> <?php
 
@@ -751,7 +751,7 @@ $portrait = 'img/anton_portrait.jpg';
 						<div class="col-md py-3">
 							<div class="appear-on-scroll">
 								<div class="row">
-									<div class="col-auto">
+									<div class="col-auto no-print">
 										<img src="img/quote-left-solid.svg" style="width: 4em;">
 									</div>
 									<div class="col text-light">
@@ -767,7 +767,7 @@ $portrait = 'img/anton_portrait.jpg';
 						<div class="col-md py-3">
 							<div class="appear-on-scroll">
 								<div class="row">
-									<div class="col-auto">
+									<div class="col-auto no-print">
 										<img src="img/quote-left-solid.svg" style="width: 4em;">
 									</div>
 									<div class="col text-light">
@@ -784,7 +784,7 @@ $portrait = 'img/anton_portrait.jpg';
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row no-print">
 						<div class="col text-center text-light py-5">
 							<div class="appear-on-scroll">
 								<img src="img/linkedin-brands.svg" style="width: 1em; margin-bottom: 4px">&nbsp
@@ -863,7 +863,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 											?></i></span>
 										</p>
-										<p class="small text-secondary"><?php
+										<p class="small text-secondary no-print"><?php
 
 											if ( isset( $_GET['lang'] )
 												&& $_GET['lang'] == 'fi' ) {
@@ -926,7 +926,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 											?></i></span>
 										</p>
-										<p class="mb-0">
+										<p class="mb-0 no-print">
 											<a href="https://goo.gl/NO0H5E" class="badge badge-light" target="_blank">
 												<img class="badge-icon" src="img/graduation-cap-solid.svg"> <?php
 
@@ -1040,7 +1040,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 											?>
 										</p>
-										<p class="mb-0">
+										<p class="mb-0 no-print">
 											<a href="https://goo.gl/LInzXA" class="badge badge-light" target="_blank">
 												<img class="badge-icon" src="img/graduation-cap-solid.svg"> <?php
 
@@ -1106,7 +1106,7 @@ $portrait = 'img/anton_portrait.jpg';
 
 											?>
 										</p>
-										<p class="mb-0">
+										<p class="mb-0 no-print">
 											<a href="https://bit.ly/38NClf0" class="badge badge-light" target="_blank">
 												<img class="badge-icon" src="img/graduation-cap-solid.svg"> <?php
 
@@ -1171,7 +1171,7 @@ $portrait = 'img/anton_portrait.jpg';
 					</div>
 				</div>
 			</section>
-			<section id="cta" class="bg-dark">
+			<section id="cta" class="bg-dark no-print">
 				<div class="container">
 					<div class="row justify-content-center py-5">
 						<div class="col-md-8 text-center text-light">
@@ -1287,7 +1287,7 @@ $portrait = 'img/anton_portrait.jpg';
 		</div>
 	</div>
 	<footer>
-		<div class="container-fluid bg-dark py-5">
+		<div class="container-fluid bg-dark py-5 no-print">
 			<div class="row">
 				<div class="col text-light text-center">
 					<p class="small"><?php
