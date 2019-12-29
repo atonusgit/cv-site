@@ -3,7 +3,16 @@ var chatIndex = 0
 
 if ( get( 'lang' ) == 'fi' ) {
 
-	var a = "Hei ystävä, mikä toi sinut tänne?"
+	if ( get( 'friend' ) ) {
+
+		var a = "Hei " + get( 'friend' ) + "-ystävä, mikä toi sinut tänne?"
+
+	} else {
+
+		var a = "Hei ystävä, mikä toi sinut tänne?"
+
+	}
+
 	var b = "Mukavaa. Musiikki oli pitkään päätyöni. Olen säveltänyt musiikkia mm. elokuviin, peleihin, trackereille ❤️, kuoroille, orkestereille ja teslakäämille ⚡⚡⚡ Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
 	var c = "Siistiä! Haaveilin koodaustaidosta jo varhain, mutta luulin, ettei ohjelmointi olisi tällaisen taiteilijahörhön hommaa <epic>🤦</epic>. Löysin todellisen kipinän koodaamiseen yllättäen sävellysopettajani kautta. Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
 	var d = "Selvä. Selaile rauhassa 😌 Saatoit jo huomata, että tämä sivu on täynnä JavaScriptiä, mutta tiesitkö, että se toimii myös moitteetta ilman? Mikäli sinulla herää kysyttävää, niin laita rohkeasti viesti ja kerro kuinka voisin olla avuksi?"
@@ -16,7 +25,16 @@ if ( get( 'lang' ) == 'fi' ) {
 
 } else {
 
-	var a = "Hello friend, what brings you here?"
+	if ( get( 'friend' ) ) {
+
+		var a = "Hello friend from " + get( 'friend' ) + ", what brings you here?"
+
+	} else {
+
+		var a = "Hello friend, what brings you here?"
+
+	}
+
 	var b = "Cool. For a long time music was my main profession. I\'ve scored music for i.e. movies, games, trackers ❤️, choirs, orchestras and a tesla coil ⚡⚡⚡ Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
 	var c = "Great! I was dreaming about acquiring the skills of coding at an early age, but I thought programming wouldn't be for such an artisy goof like me <epic>🤦</epic>. Surprisingly, I got the spark for coding from my composing teacher. Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
 	var d = "Ok. Feel free to continue browsing 😌 You may have noticed that this site is fully packed with JavaScript, but did you know that it also works completely without it? If you have any questions, please don\'t hesitate to drop a message and tell me how can I help you."
