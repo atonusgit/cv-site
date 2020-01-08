@@ -310,6 +310,11 @@ $portrait = 'img/anton_portrait.jpg';
 
 								?>
 							</p>
+							<p class="small on-print" style="display: none;">
+								Espoo, Finland
+								<br>anton@valle.fi
+								<br>+358 50 3000 829
+							</p>
 						</div>
 						<div class="col-md-3"></div>
 						<div class="col-md-4 text-center">
