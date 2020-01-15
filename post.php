@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 /**
  *	Handle POST requests
@@ -6,11 +7,8 @@
  *	@author Anton Valle
  */
 
-// check csrf token
-// session_start();
-
-// if ( !empty( $_POST['token'] )
-// 	&& hash_equals( $_SESSION['token'], $_POST['token'] ) ) {
+if ( !empty( $_POST['token'] )
+	&& hash_equals( $_SESSION['token'], $_POST['token'] ) ) {
 
 	if ( isset( $_POST['initChoice'] )
 		&& intval( $_POST['initChoice'] )
@@ -75,10 +73,10 @@
 
 	}
 
-// } else {
+} else {
 
-// 	http_response_code( 404 );
+	http_response_code( 404 );
 
-// }
+}
 
 ?>

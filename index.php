@@ -1,11 +1,15 @@
-<!--
 <?php
+session_start();
 
 /**
  *	Page layout
  *
  *	@author Anton Valle
  */
+
+?>
+<!--
+<?php
 
 if ( isset( $_GET['lang'] )
 	&& $_GET['lang'] == 'fi' ) {
@@ -39,7 +43,7 @@ if ( isset( $_GET['lang'] )
 <?php
 
 // generate csrf token
-session_start();
+
 
 if ( empty( $_SESSION['token'] ) ) {
 

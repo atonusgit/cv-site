@@ -256,7 +256,7 @@ window.sendMessage = ( e ) => {
 
 			if ( e["response"] == "TRUE" ) {
 
-				setTimeout( async() => {
+				setTimeout( async () => {
 
 					$( '#chat-visitor-1' ).html(
 						'<div class="col-md-8">\
