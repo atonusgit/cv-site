@@ -1,3 +1,9 @@
+/**
+ *	Navbar visualization actions
+ *
+ *	@author Anton Valle
+ */
+
 var sections = $( 'section' )
 var nav = $( 'nav' )
 var navHeight = nav.outerHeight() + 20

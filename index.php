@@ -1,5 +1,53 @@
+<!--
 <?php
 
+/**
+ *	Page layout
+ *
+ *	@author Anton Valle
+ */
+
+if ( isset( $_GET['lang'] )
+	&& $_GET['lang'] == 'fi' ) {
+
+	?>
+	 ____  ____  ____  _  _  ____  ____  __  __  __    _____    __   
+	(_  _)( ___)(  _ \( \/ )( ___)(_  _)(  )(  )(  )  (  _  )  /__\  
+	  )(   )__)  )   / \  /  )__)   )(   )(__)(  )(__  )(_)(  /(__)\ 
+	 (__) (____)(_)\_)  \/  (____) (__) (______)(____)(_____)(__)(__)
+
+	antonvalle.fi/cv | Design & Ohjelmistokehitys Anton Valle
+	Löydä tämän CV-sivun repo osoitteesta https://github.com/atonusgit/cv-site<?php
+
+} else {
+
+	?>
+	 _    _  ____  __    ___  _____  __  __  ____ 
+	( \/\/ )( ___)(  )  / __)(  _  )(  \/  )( ___)
+	 )    (  )__)  )(__( (__  )(_)(  )    (  )__) 
+	(__/\__)(____)(____)\___)(_____)(_/\/\_)(____)
+
+	antonvalle.fi/cv | Design & Development Anton Valle
+	Find repo of this CV site at https://github.com/atonusgit/cv-site<?php
+
+	}
+
+?>
+
+
+-->
+<?php
+
+// generate csrf token
+session_start();
+
+if ( empty( $_SESSION['token'] ) ) {
+
+    $_SESSION['token'] = bin2hex( random_bytes( 32 ) );
+
+}
+
+$token = $_SESSION['token'];
 $portrait = 'img/anton_portrait.jpg';
 
 ?>
@@ -1197,6 +1245,7 @@ $portrait = 'img/anton_portrait.jpg';
 							</h2>
 						</div>
 					</div>
+					<input type="hidden" id="csrf-token" name="token" value="<?php echo $token; ?>">
 					<div id="chat-area">
 						<noscript>
 							<div id="chat-anton-1" class="row justify-content-center">
@@ -1233,6 +1282,7 @@ $portrait = 'img/anton_portrait.jpg';
 							<div class="row justify-content-center py-5">
 								<div class="col-md-8 text-center text-light">
 									<form id="contact-me" action="post.php" method="post">
+										<input type="hidden" name="token" value="<?php echo $token; ?>">
 										<input type="hidden" name="initChoice" value="4">
 										<input type="hidden" name="lang" value="<?php
 

@@ -1,3 +1,9 @@
+/**
+ *	Pseudo chat actions and content
+ *
+ *	@author Anton Valle
+ */
+
 var launchChatLaunched = false
 var chatIndex = 0
 
@@ -221,7 +227,8 @@ window.sendMessage = ( e ) => {
 	let data = {
 		action: "contact_anton",
 		initChoice: e,
-		message: form.message.value
+		message: form.message.value,
+		token: $( '#csrf-token' ).val(),
 	}
 
 	jQuery.ajax( {

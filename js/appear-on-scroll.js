@@ -1,3 +1,9 @@
+/**
+ *	Make div elements appear on scroll
+ *
+ *	@author Anton Valle
+ */
+
 $('.appear-on-scroll').each( function() {
 
 	$( this ).animate( {

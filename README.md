@@ -2,4 +2,4 @@
 
 My CV as a website.
 
-Visit the site [antonvalle.fi/cv](http://www.antonvalle.fi/cv)
+Visit the site [antonvalle.fi/cv/?friend=GitHub](http://www.antonvalle.fi/cv/?friend=GitHub)
