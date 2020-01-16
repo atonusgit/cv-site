@@ -80,7 +80,7 @@
 	margin-top: -106px;
 	height: 500px;
 	background-size: cover;
-	background-image: linear-gradient( rgba( 255, 255, 255, 0.85 ), rgba( 255, 255, 255 ) ), url( 'img/anton_paja.jpg' );
+	background-image: linear-gradient( rgba( 255, 255, 255, 0.85 ), rgba( 255, 255, 255 ) ), url( '../img/anton_paja.jpg' );
 }
 #name-face > .container {
 	padding-top: 106px;
@@ -125,7 +125,7 @@
 }
 .testimonials-bg {
 	background-size: cover;
-	background-image: linear-gradient( rgba( 23, 162, 184, 0.95 ), rgba( 23, 162, 184, 0.95 ) ), url( 'img/anton_recording.jpg' );
+	background-image: linear-gradient( rgba( 23, 162, 184, 0.95 ), rgba( 23, 162, 184, 0.95 ) ), url( '../img/anton_recording.jpg' );
 }
 .parallax {
 	background-attachment: fixed;

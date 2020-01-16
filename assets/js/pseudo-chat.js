@@ -11,11 +11,11 @@ if ( get( 'lang' ) == 'fi' ) {
 
 	if ( get( 'friend' ) ) {
 
-		var a = "Hei " + get( 'friend' ) + "-ystävä, mikä toi sinut tänne?"
+		var a = "Hei " + get( 'friend' ) + "-ystävä, mitä mahdat etsiä?"
 
 	} else {
 
-		var a = "Hei ystävä, mikä toi sinut tänne?"
+		var a = "Hei ystävä, mitä mahdat etsiä?"
 
 	}
 
@@ -23,8 +23,8 @@ if ( get( 'lang' ) == 'fi' ) {
 	var c = "Siistiä! Haaveilin koodaustaidosta jo varhain, mutta luulin, ettei ohjelmointi olisi tällaisen taiteilijahörhön hommaa <epic>🤦</epic>. Löysin todellisen kipinän koodaamiseen yllättäen sävellysopettajani kautta. Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
 	var d = "Selvä. Selaile rauhassa 😌 Saatoit jo huomata, että tämä sivu on täynnä JavaScriptiä, mutta tiesitkö, että se toimii myös moitteetta ilman? Mikäli sinulla herää kysyttävää, niin laita rohkeasti viesti ja kerro kuinka voisin olla avuksi?"
 	var e = "Kiitos viestistäsi! Olen pian yhteydessä!"
-	var textMusic = "Musiikki"
-	var textProgramming = "Ohjelmointi"
+	var textMusic = "Muusikkoa"
+	var textProgramming = "Ohjelmoijaa"
 	var textJustBrowsing = "Selailen vain..."
 	var textTextareaPlaceholder = "Hei Anton, olen ..."
 	var textSubmit = "Lähetä"
@@ -33,11 +33,11 @@ if ( get( 'lang' ) == 'fi' ) {
 
 	if ( get( 'friend' ) ) {
 
-		var a = "Hello friend from " + get( 'friend' ) + ", what brings you here?"
+		var a = "Hello friend from " + get( 'friend' ) + ", what are you looking for?"
 
 	} else {
 
-		var a = "Hello friend, what brings you here?"
+		var a = "Hello friend, what are you looking for?"
 
 	}
 
@@ -45,8 +45,8 @@ if ( get( 'lang' ) == 'fi' ) {
 	var c = "Great! I was dreaming about acquiring the skills of coding at an early age, but I thought programming wouldn't be for such an artisy goof like me <epic>🤦</epic>. Surprisingly, I got the spark for coding from my composing teacher. Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
 	var d = "Ok. Feel free to continue browsing 😌 You may have noticed that this site is fully packed with JavaScript, but did you know that it also works completely without it? If you have any questions, please don\'t hesitate to drop a message and tell me how can I help you."
 	var e = "Thank you for your message! I\'ll be in touch with you shortly!"
-	var textMusic = "Music"
-	var textProgramming = "Programming"
+	var textMusic = "Musician"
+	var textProgramming = "Programmer"
 	var textJustBrowsing = "I\\'m just browsing..."
 	var textTextareaPlaceholder = "Hi Anton, I\'m ..."
 	var textSubmit = "Send"
@@ -88,7 +88,7 @@ window.launchChat = async () => {
 									</a>\
 								</div>\
 								<div class="col-auto">\
-									<img class="round-image chat-image" src="img/user-circle-solid.svg">\
+									<img class="round-image chat-image" src="assets/img/user-circle-solid.svg">\
 								</div>\
 								<div class="col-lg-3">\
 								</div>\
@@ -120,7 +120,7 @@ window.handleChatResponse = async ( e ) => {
 							</div>\
 						</div>\
 						<div class="col-auto">\
-							<img class="round-image chat-image" src="img/user-circle-solid.svg">\
+							<img class="round-image chat-image" src="assets/img/user-circle-solid.svg">\
 						</div>\
 						<div class="col-lg-3">\
 						</div>\
@@ -142,7 +142,7 @@ const updateChat = async ( e ) => {
 				<div class="container">\
 					<div class="row align-items-center form-group" style="min-height: 112px;">\
 						<div class="col-auto">\
-							<img class="round-image chat-image" style="display: none;" src="img/anton_portrait.jpg">\
+							<img class="round-image chat-image" style="display: none;" src="assets/img/anton_portrait.jpg">\
 						</div>\
 						<div class="col-lg-auto col px-0">\
 							<div class="speech-bubble speech-bubble-anton text-light" style="display: none;">\
@@ -164,7 +164,7 @@ const updateChat = async ( e ) => {
 			control='false'\
 			loop\
 			mode='normal'\
-			src='img/lf20_mBK8iA.json'\
+			src='assets/img/lf20_mBK8iA.json'\
 			style='width: 50px; height: 20px'>\
 		</lottie-player>" )
 	$( '#chat-anton-' + e ).find( '.chat-writing' ).show()
@@ -233,7 +233,7 @@ window.sendMessage = ( e ) => {
 
 	jQuery.ajax( {
 
-		url: "post.php",
+		url: "process/post.php",
 		type: "POST",
 		data: data,
 		dataType: "json",
@@ -247,7 +247,7 @@ window.sendMessage = ( e ) => {
 					control='false'\
 					loop\
 					mode='normal'\
-					src='img/lf20_mBK8iA.json'\
+					src='assets/img/lf20_mBK8iA.json'\
 					style='width: 50px; height: 20px'>\
 				</lottie-player>" )
 
@@ -270,7 +270,7 @@ window.sendMessage = ( e ) => {
 										</div>\
 									</div>\
 									<div class="col-auto">\
-										<img class="round-image chat-image" src="img/user-circle-solid.svg">\
+										<img class="round-image chat-image" src="assets/img/user-circle-solid.svg">\
 									</div>\
 									<div class="col-lg-3">\
 									</div>\
