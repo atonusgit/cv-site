@@ -1057,6 +1057,7 @@ class Translations {
 		}
 
 	}
+
 	public function footer_note( $lang ) {
 
 		switch ( $lang ) {
@@ -1067,6 +1068,54 @@ class Translations {
 
 			default:
 				return "Powered by my friends <a href='https://getbootstrap.com/' target='_blank' class='text-light'>Bootstrap</a>, <a href='https://jquery.com/' target='_blank' class='text-light'>jQuery</a>, <a href='https://fontawesome.com/' target='_blank' class='text-light'><img class='badge-icon' src='assets/img/rocket-solid.svg'> Font Awesome</a>, <a href='https://html2canvas.hertzen.com/' target='_blank' class='text-light'>html2canvas</a> and <a href='https://lottiefiles.com/web-player' target='_blank' class='text-light'>Lottie</a>.<br>Unfortunately <a href='https://wordpress.org/' target='_blank' class='text-light'>WordPress</a> didn't make it into this party!";
+				break;
+
+		}
+
+	}
+
+	public function modal_thank_you_response( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Kiitos viestistäsi! Olen pian yhteydessä!";
+				break;
+
+			default:
+				return "Thank you for your message! I'll be in touch with you shortly!";
+				break;
+
+		}
+
+	}
+
+	public function close( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Sulje";
+				break;
+
+			default:
+				return "Close";
+				break;
+
+		}
+
+	}
+
+	public function modal_empty_response( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Hmm, viestisi sisällössä ilmeni ongelma...</p><p>Kokeile lähettää uudelleen.";
+				break;
+
+			default:
+				return "Hmm, an error occurred with your message...</p><p>Please try sending again.";
 				break;
 
 		}

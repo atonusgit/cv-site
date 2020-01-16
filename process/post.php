@@ -7,8 +7,12 @@ session_start();
  *	@author Anton Valle
  */
 
-if ( !empty( $_POST['token'] )
-	&& hash_equals( $_SESSION['token'], $_POST['token'] ) ) {
+require_once( '../process/security.php' );
+
+use antonCV\Security;
+
+if ( !empty( $_POST['postToken'] )
+	&& hash_equals( $_SESSION['postToken'], $_POST['postToken'] ) ) {
 
 	if ( isset( $_POST['initChoice'] )
 		&& intval( $_POST['initChoice'] )
@@ -21,6 +25,7 @@ if ( !empty( $_POST['token'] )
 			&& strlen( $message_sanitized ) <= 1000 ) {
 
 			switch ( $_POST['initChoice'] ) {
+
 				case '1':
 					$init_choice = 'Musiikki';
 					break;
@@ -40,8 +45,8 @@ if ( !empty( $_POST['token'] )
 			}
 
 			$msg = wordwrap( $message_sanitized, 70 );
-
 			mail( "anton@valle.fi", "Viesti CV sivulta", $init_choice . "\n\r" . $msg );
+			unset( $_SESSION['postToken'] );
 			$response['response'] = "TRUE";
 
 		} else {
@@ -52,7 +57,9 @@ if ( !empty( $_POST['token'] )
 
 		if ( $_POST['initChoice'] == 4 ) {
 
-			header( "Location: http://www.antonvalle.fi/cv/?lang=" . $_POST['lang'] . "&thankyou=1" );
+			$token = ( new Security )->getToken( 'responseToken' );
+			unset( $_SESSION['postToken'] );
+			header( "Location: http://" . $_SERVER['HTTP_HOST'] . "/cv/?lang=" . $_POST['lang'] . "&thankyou=1&token=" . $_SESSION['responseToken'] );
 
 		} else {
 
@@ -63,7 +70,9 @@ if ( !empty( $_POST['token'] )
 
 	} else if ( isset( $_POST['lang'] ) ) {
 
-		header( "Location: http://www.antonvalle.fi/cv/?lang=" . $_POST['lang'] . "&empty=1" );
+		$token = ( new Security )->getToken( 'responseToken' );
+		unset( $_SESSION['postToken'] );
+		header( "Location: http://" . $_SERVER['HTTP_HOST'] . "/cv/?lang=" . $_POST['lang'] . "&empty=1&token=" . $_SESSION['responseToken'] );
 
 	} else {
 

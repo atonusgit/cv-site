@@ -74,7 +74,7 @@ $experience_keys = array(
 												?>
 												data-toggle="popover" data-trigger="hover" data-placement="top" <?php
 
-												echo 'data-content="' . $translations->$experience( $experience_link . '_popover', null ) . '"';
+												echo 'data-content="' . $translations->$experience( $experience_link . '_popover', isset( $_GET['lang'] ) ? $_GET['lang'] : null ) . '"';
 
 											}
 

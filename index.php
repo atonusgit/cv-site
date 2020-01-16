@@ -14,10 +14,8 @@ require_once( 'process/helpers.php' );
 use antonCV\Translations;
 use antonCV\Security;
 
-$token = ( new Security )->getToken();
+$token = ( new Security )->getToken( 'postToken' );
 $translations = new Translations;
-
-$portrait = 'assets/img/anton_portrait.jpg';
 
 echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : null );
 
@@ -55,7 +53,7 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 		echo $translations->meta_title( isset( $_GET['lang'] ) ? $_GET['lang'] : null );
 
 		?>">
-	<meta property="og:image" content="http://www.antonvalle.fi/cv/assets/img/anton_paja.jpg">
+	<meta property="og:image" content="http://<?php echo $_SERVER['HTTP_HOST']; ?>/cv/assets/img/anton_paja.jpg">
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="<?php
 
@@ -76,7 +74,7 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 		echo $translations->meta_description( isset( $_GET['lang'] ) ? $_GET['lang'] : null );
 
 		?>">
-	<meta property="og:url" content="http://www.antonvalle.fi/cv/<?php
+	<meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST']; ?>/cv/<?php
 
 		if ( isset( $_GET['lang'] )
 			&& $_GET['lang'] == 'fi' ) {
@@ -104,12 +102,12 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="assets/js/html2canvas.min.js"></script>
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	<link rel="icon" href="<?php echo $portrait; ?>" sizes="32x32">
-	<link rel="icon" href="<?php echo $portrait; ?>" sizes="192x192">
-	<link rel="apple-touch-icon-precomposed" href="<?php echo $portrait; ?>">
+	<link rel="icon" href="assets/img/anton_portrait.jpg" sizes="32x32">
+	<link rel="icon" href="assets/img/anton_portrait.jpg" sizes="192x192">
+	<link rel="apple-touch-icon-precomposed" href="assets/img/anton_portrait.jpg">
 	
 	<!-- Begin Inspectlet Asynchronous Code -->
-<!-- 	<script type="text/javascript">
+	<script type="text/javascript">
 	(function() {
 	window.__insp = window.__insp || [];
 	__insp.push(['wid', 1090028467]);
@@ -117,7 +115,7 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 	if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1090028467&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
 	setTimeout(ldinsp, 0);
 	})();
-	</script> -->
+	</script>
 	<!-- End Inspectlet Asynchronous Code -->
 
 	<noscript>
@@ -202,139 +200,8 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 	<script src="assets/js/pseudo-chat.js"></script>
 	<script src="assets/js/appear-on-scroll.js"></script><?php
 
-	if ( isset( $_GET['thankyou'] ) ) {
-
-		?>
-		<noscript>
-			<div class="modal fade bd-example-modal-sm show" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: block;">
-				<div class="modal-dialog modal-sm">
-					<div class="modal-content">
-						<div class="container py-3 px-3">
-							<div class="row">
-								<div class="col"><?php
-
-									if ( isset( $_GET['lang'] )
-										&& $_GET['lang'] == 'fi' ) {
-
-										echo "Kiitos viestistäsi! Olen pian yhteydessä!";
-
-									} else {
-
-										echo "Thank you for your message! I'll be in touch with you shortly!";
-
-									}
-
-									?>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col text-right">
-									<a href="http://www.antonvalle.fi/cv/?lang=<?php
-
-										if ( isset( $_GET['lang'] )
-											&& $_GET['lang'] == 'fi' ) {
-
-											echo "fi";
-
-										} else {
-
-											echo "en";
-
-										}
-
-										?>" class="btn btn-info"><?php
-
-										if ( isset( $_GET['lang'] )
-											&& $_GET['lang'] == 'fi' ) {
-
-											echo "Sulje";
-
-										} else {
-
-											echo "Close";
-
-										}
-
-										?>
-									</a>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="modal-backdrop fade show"></div>
-		</noscript><?php
-
-	}
-
-	if ( isset( $_GET['empty'] ) ) {
-
-		?>
-		<noscript>
-			<div class="modal fade bd-example-modal-sm show" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: block;">
-				<div class="modal-dialog modal-sm">
-					<div class="modal-content">
-						<div class="container py-3 px-3">
-							<div class="row">
-								<div class="col">
-									<p><?php
-
-									if ( isset( $_GET['lang'] )
-										&& $_GET['lang'] == 'fi' ) {
-
-										echo "Hmm, viestisi sisällössä ilmeni ongelma...</p><p>Kokeile lähettää uudelleen.";
-
-									} else {
-
-										echo "Hmm, an error occurred with your message...</p><p>Please try sending again.";
-
-									}
-
-									?>
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col text-right">
-									<a href="http://www.antonvalle.fi/cv/?lang=<?php
-
-										if ( isset( $_GET['lang'] )
-											&& $_GET['lang'] == 'fi' ) {
-
-											echo "fi";
-
-										} else {
-
-											echo "en";
-
-										}
-
-										?>" class="btn btn-info"><?php
-
-										if ( isset( $_GET['lang'] )
-											&& $_GET['lang'] == 'fi' ) {
-
-											echo "Sulje";
-
-										} else {
-
-											echo "Close";
-
-										}
-
-										?>
-									</a>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="modal-backdrop fade show"></div>
-		</noscript><?php
-
-	}
+	include_once( 'views/modal_thank_you.php' );
+	include_once( 'views/modal_empty.php' );
 
 	?>
 </body>

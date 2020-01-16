@@ -17,9 +17,10 @@
 
 					?>
 				</h2>
+				<p class="small">Powered by <i><strong><a href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" class='text-secondary'>Antonoo</a></strong></i></p>
 			</div>
 		</div>
-		<input type="hidden" id="csrf-token" name="token" value="<?php echo $token; ?>">
+		<input type="hidden" id="csrf-token" name="postToken" value="<?php echo $token; ?>">
 		<div id="chat-area">
 			<noscript>
 				<div id="chat-anton-1" class="row justify-content-center">
@@ -47,7 +48,7 @@
 				<div class="row justify-content-center py-5">
 					<div class="col-md-8 text-center text-light">
 						<form id="contact-me" action="process/post.php" method="post">
-							<input type="hidden" name="token" value="<?php echo $token; ?>">
+							<input type="hidden" name="postToken" value="<?php echo $token; ?>">
 							<input type="hidden" name="initChoice" value="4">
 							<input type="hidden" name="lang" value="<?php
 

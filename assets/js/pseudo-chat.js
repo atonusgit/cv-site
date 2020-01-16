@@ -228,7 +228,7 @@ window.sendMessage = ( e ) => {
 		action: "contact_anton",
 		initChoice: e,
 		message: form.message.value,
-		token: $( '#csrf-token' ).val(),
+		postToken: $( '#csrf-token' ).val(),
 	}
 
 	jQuery.ajax( {

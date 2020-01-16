@@ -16,15 +16,15 @@ class Security {
 
 	}
 
-	public function getToken() {
+	public function getToken( $key ) {
 
-		if ( empty( $_SESSION['token'] ) ) {
+		if ( empty( $_SESSION[$key] ) ) {
 
-		    $_SESSION['token'] = $this->setToken();
+		    $_SESSION[$key] = $this->setToken();
 
 		}
 
-		return $_SESSION['token'];
+		return $_SESSION[$key];
 
 	}
 
