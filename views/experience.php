@@ -7,6 +7,7 @@
  */
 
 $experience_keys = array(
+	'experience_evermade' => array(),
 	'experience_superlect' => array(
 		'work_example',
 		'article'

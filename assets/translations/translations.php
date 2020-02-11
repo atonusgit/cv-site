@@ -408,6 +408,62 @@ class Translations {
 
 	}
 
+	public function experience_evermade( $part, $lang ) {
+
+		switch ( $part ) {
+
+			case 'title':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Evermade Oy, Digital Agency - Web Developer";
+						break;
+
+					default:
+						return "Evermade Oy, Digital Agency - Web Developer";
+						break;
+
+				}
+
+				break;
+
+			case 'duration':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "2020 - Nykyinen";
+						break;
+
+					default:
+						return "2020 - Present";
+						break;
+
+				}
+
+				break;
+
+			case 'description':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "";
+						break;
+
+					default:
+						return "";
+						break;
+
+				}
+
+				break;
+
+		}
+
+	}
+
 	public function experience_superlect( $part, $lang ) {
 
 		switch ( $part ) {
@@ -433,11 +489,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "2018 - Nykyinen";
+						return "2018 - 2020";
 						break;
 
 					default:
-						return "2018 - Present";
+						return "2018 - 2020";
 						break;
 
 				}
@@ -629,11 +685,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "2018 - 2018";
+						return "2018";
 						break;
 
 					default:
-						return "2018 - 2018";
+						return "2018";
 						break;
 
 				}
