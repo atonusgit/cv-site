@@ -84,11 +84,11 @@ window.launchChat = async () => {
 						<div class="container">\
 							<div class="row align-items-center justify-content-end form-group">\
 								<div class="col text-right">\
-									<a href="javascript:;" onclick="handleChatResponse( { 0: 1, 1: \'' + textMusic + '\' } )" class="btn btn-light my-1">' + textMusic + '\
+									<a href="javascript:;" onclick="handleChatResponse( { 0: 2, 1: \'' + textMusic + '\' } )" class="btn btn-light my-1">' + textMusic + '\
 									</a>\
-									<a href="javascript:;" onclick="handleChatResponse( { 0: 2, 1: \'' + textProgramming + '\' } )" class="btn btn-light my-1">' + textProgramming + '\
+									<a href="javascript:;" onclick="handleChatResponse( { 0: 3, 1: \'' + textProgramming + '\' } )" class="btn btn-light my-1">' + textProgramming + '\
 									</a>\
-									<a href="javascript:;" onclick="handleChatResponse( { 0: 3, 1: \'' + textJustBrowsing + '\' } )" class="btn btn-light my-1">' + textJustBrowsing.replace( '\\', '' ) + '\
+									<a href="javascript:;" onclick="handleChatResponse( { 0: 4, 1: \'' + textJustBrowsing + '\' } )" class="btn btn-light my-1">' + textJustBrowsing.replace( '\\', '' ) + '\
 									</a>\
 								</div>\
 								<div class="col-auto">\
