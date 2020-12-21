@@ -11,14 +11,15 @@ if ( get( 'lang' ) == 'fi' ) {
 
 	if ( get( 'friend' ) ) {
 
-		var a = "Hei " + get( 'friend' ) + "-ystävä, mitä mahdat etsiä?"
+		var x = "Hei " + get( 'friend' ) + "-ystävä!"
 
 	} else {
 
-		var a = "Hei ystävä, mitä mahdat etsiä?"
+		var x = "Hei ystävä!"
 
 	}
 
+	var a = "Mitä mahdat etsiä?"
 	var b = "Mukavaa. Musiikki oli pitkään päätyöni. Olen säveltänyt musiikkia mm. elokuviin, peleihin, trackereille ❤️, kuoroille, orkestereille ja teslakäämille ⚡⚡⚡ Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
 	var c = "Siistiä! Haaveilin koodaustaidosta jo varhain, mutta luulin, ettei ohjelmointi olisi tällaisen taiteilijahörhön hommaa <epic>🤦</epic>. Löysin todellisen kipinän koodaamiseen yllättäen sävellysopettajani kautta. Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
 	var d = "Selvä. Selaile rauhassa 😌 Saatoit jo huomata, että tämä sivu on täynnä JavaScriptiä, mutta tiesitkö, että se toimii myös moitteetta ilman? Mikäli sinulla herää kysyttävää, niin laita rohkeasti viesti ja kerro kuinka voisin olla avuksi?"
@@ -33,20 +34,21 @@ if ( get( 'lang' ) == 'fi' ) {
 
 	if ( get( 'friend' ) ) {
 
-		var a = "Hello friend from " + get( 'friend' ) + ", what are you looking for?"
+		var x = "Hello friend from " + get( 'friend' ) + "!"
 
 	} else {
 
-		var a = "Hello friend, what are you looking for?"
+		var x = "Hello friend!"
 
 	}
 
+	var a = "What are you looking for?"
 	var b = "Cool. For a long time music was my main profession. I\'ve scored music for i.e. movies, games, trackers ❤️, choirs, orchestras and a tesla coil ⚡⚡⚡ Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
 	var c = "Great! I was dreaming about acquiring the skills of coding at an early age, but I thought programming wouldn't be for such an artisy goof like me <epic>🤦</epic>. Surprisingly, I got the spark for coding from my composing teacher. Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
 	var d = "Ok. Feel free to continue browsing 😌 You may have noticed that this site is fully packed with JavaScript, but did you know that it also works completely without it? If you have any questions, please don\'t hesitate to drop a message and tell me how can I help you."
 	var e = "Thank you for your message! I\'ll be in touch with you shortly!"
-	var textMusic = "Musician"
-	var textProgramming = "Programmer"
+	var textMusic = "A musician"
+	var textProgramming = "A programmer"
 	var textJustBrowsing = "I\\'m just browsing..."
 	var textTextareaPlaceholder = "Hi Anton, I\'m ..."
 	var textSubmit = "Send"
@@ -55,11 +57,12 @@ if ( get( 'lang' ) == 'fi' ) {
 
 var antonMessages = {
 
-	0: a,
-	1: b,
-	2: c,
-	3: d,
-	4: e
+	0: x,
+	1: a,
+	2: b,
+	3: c,
+	4: d,
+	5: e
 
 }
 
@@ -73,7 +76,8 @@ window.launchChat = async () => {
 		if ( bottom_of_window - 200 > bottom_of_object
 			&& launchChatLaunched == false ) {
 
-			await updateChat( chatIndex )
+			await updateChat( 0, 800 )
+			await updateChat( 1 )
 			$( '#chat-area' ).append(
 				'<div id="chat-visitor-0" class="row justify-content-center">\
 					<div class="col-md-8">\
@@ -134,7 +138,7 @@ window.handleChatResponse = async ( e ) => {
 
 }
 
-const updateChat = async ( e ) => {
+const updateChat = async ( e, wait_time = 2500 ) => {
 
 	$( '#chat-area' ).append( 
 		'<div id="chat-anton-' + e + '" class="row justify-content-center">\
@@ -168,7 +172,7 @@ const updateChat = async ( e ) => {
 			style='width: 50px; height: 40px'>\
 		</lottie-player>" )
 	$( '#chat-anton-' + e ).find( '.chat-writing' ).show()
-	await typeAndReturnAntonMessage( e )
+	await typeAndReturnAntonMessage( e, wait_time )
 
 }
 
@@ -178,9 +182,9 @@ const timeout = ( ms ) => {
 
 }
 
-const typeAndReturnAntonMessage = async ( e ) => {
+const typeAndReturnAntonMessage = async ( e, wait_time = 2500 ) => {
 
-    await timeout( 2500 )
+    await timeout( wait_time )
     return returnAntonMessage( e )
 
 }
