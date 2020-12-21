@@ -93,11 +93,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "Espoo, Finland<br>anton@valle.fi<br>+358 50 3000 829";
+				return "Espoo, Finland<br>cv@valle.fi";
 				break;
 
 			default:
-				return "Espoo, Finland<br>anton@valle.fi<br>+358 50 3000 829";
+				return "Espoo, Finland<br>cv@valle.fi";
 				break;
 
 		}
