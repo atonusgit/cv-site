@@ -165,7 +165,7 @@ const updateChat = async ( e ) => {
 			loop\
 			mode='normal'\
 			src='assets/img/lf20_mBK8iA.json'\
-			style='width: 50px; height: 20px'>\
+			style='width: 50px; height: 40px'>\
 		</lottie-player>" )
 	$( '#chat-anton-' + e ).find( '.chat-writing' ).show()
 	await typeAndReturnAntonMessage( e )
@@ -248,7 +248,7 @@ window.sendMessage = ( e ) => {
 					loop\
 					mode='normal'\
 					src='assets/img/lf20_mBK8iA.json'\
-					style='width: 50px; height: 20px'>\
+					style='width: 50px; height: 40px'>\
 				</lottie-player>" )
 
 		},
