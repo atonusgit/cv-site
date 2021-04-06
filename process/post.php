@@ -26,19 +26,19 @@ if ( !empty( $_POST['postToken'] )
 
 			switch ( $_POST['initChoice'] ) {
 
-				case '1':
+				case '2':
 					$init_choice = 'Musiikki';
 					break;
 
-				case '2':
+				case '3':
 					$init_choice = 'Ohjelmointi';
 					break;
 
-				case '3':
+				case '4':
 					$init_choice = 'Selailen vain...';
 					break;
 
-				case '4':
+				case '5':
 					$init_choice = 'No JavaScript';
 					break;
 
@@ -55,7 +55,7 @@ if ( !empty( $_POST['postToken'] )
 
 		}
 
-		if ( $_POST['initChoice'] == 4 ) {
+		if ( $_POST['initChoice'] == 5 ) {
 
 			$token = ( new Security )->getToken( 'responseToken' );
 			unset( $_SESSION['postToken'] );

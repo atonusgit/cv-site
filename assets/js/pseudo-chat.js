@@ -281,7 +281,7 @@ window.sendMessage = ( e ) => {
 								</div>\
 							</div>\
 						</div>' )
-					await updateChat( 4 )
+					await updateChat( 5 )
 
 				}, 2500 )
 
