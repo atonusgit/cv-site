@@ -45,7 +45,7 @@ if ( !empty( $_POST['postToken'] )
 			}
 
 			$msg = wordwrap( $message_sanitized, 70 );
-			mail( "anton@valle.fi", "Viesti CV sivulta", $init_choice . "\n\r" . $msg );
+			mail( "cv@valle.fi", "Viesti CV sivulta", $init_choice . "\n\r" . $msg );
 			unset( $_SESSION['postToken'] );
 			$response['response'] = "TRUE";
 
