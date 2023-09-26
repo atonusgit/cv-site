@@ -25,4 +25,4 @@ jobs:
       env:
         dest: '${{ vars.USER }}@${{ vars.PRODUCTION_SERVER }}:${{ vars.TARGET_FOLDER }}'
       run: |
-        scp -r -o StrictHostKeyChecking=no -i /tmp/deploy_key/. /tmp/deploy/ ${{env.dest}}
+        scp -r -o StrictHostKeyChecking=no -i /tmp/deploy_key /tmp/deploy/. ${{env.dest}}
