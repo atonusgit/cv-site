@@ -1,0 +1,28 @@
+name: Deploy via rsync
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup SSH Key
+      run: echo "${{ secrets.SSH_KEY }}" > /tmp/deploy_key && chmod 600 /tmp/deploy_key
+
+    - name: Prepare files for transfer
+      run: |
+        mkdir /tmp/deploy
+        rsync -av --exclude '.git/' --exclude '.github/' --exclude '.gitignore' ./ /tmp/deploy/
+
+    - name: Copy files to Server
+      env:
+        dest: '${{ vars.USER }}@${{ vars.PRODUCTION_SERVER }}:${{ vars.TARGET_FOLDER }}'
+      run: |
+        scp -r -o StrictHostKeyChecking=no -i /tmp/deploy_key /tmp/deploy/ ${{env.dest}}
