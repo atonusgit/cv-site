@@ -205,11 +205,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "Olen työskennellyt WordPressin kanssa vuosia, mutta Superlect (app.superlect.com) on ensimmäinen alusta asti rakennettu WordPress-sovellukseni.";
+				return "Olen toteuttanut WordPress:illä mm. kauppapaikka-alustan, verkkokauppoja ja tavanomaisia verkkosivuja.";
 				break;
 
 			default:
-				return "I've worked with WordPress for many years, but Superlect (app.superlect.com) is my first WordPress build from ground up.";
+				return "I have implemented with WordPress e.g. marketplace platform, online stores and conventional websites.";
 				break;
 
 		}
