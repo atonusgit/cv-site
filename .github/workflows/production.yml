@@ -3,7 +3,7 @@ name: Deploy via rsync
 on:
   push:
     branches:
-      - production
+      - main
 
 jobs:
   deploy:
