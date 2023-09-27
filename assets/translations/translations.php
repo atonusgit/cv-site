@@ -417,11 +417,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Evermade Oy, Digital Agency - Web Developer";
+						return "Evermade Oy, Digital Agency - Care Team Lead & Automations";
 						break;
 
 					default:
-						return "Evermade Oy, Digital Agency - Web Developer";
+						return "Evermade Oy, Digital Agency - Care Team Lead & Automations";
 						break;
 
 				}
@@ -449,11 +449,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "";
+						return "Aloitin Evermadessa projektikehittäjänä verkkokauppojen ja integraatioiden parissa. Sitten siirryin Care-tiimiin, jossa palvelin asiakkaita pienkehittämisen parissa. Myöhemmin etenin Care-tiimin johtoon ja johdin myös työprosessiemme automatisoinnin sekä tietoturvan kehitystä.";
 						break;
 
 					default:
-						return "";
+						return "I started at Evermade as a project developer focusing on e-commerce and integrations. Later, I moved to the Care team, where I served clients in small-scale development. Eventually, I advanced to lead the Care team and also spearheaded the automation of our work processes as well as improvements in cybersecurity.";
 						break;
 
 				}
