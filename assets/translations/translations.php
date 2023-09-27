@@ -569,7 +569,7 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Olen yksi yrityksen perustajista, toimin varainhankkijana ja johdan WordPress-pohjaisen kauppapaikan ohjelmistokehitystä.";
+						return "Olin yksi yrityksen perustajista, toimin varainhankkijana ja johdin WordPress-pohjaisen kauppapaikan ohjelmistokehitystä.";
 						break;
 
 					default:
@@ -583,7 +583,7 @@ class Translations {
 			case 'work_example_href':
 
 				return 'https://app.superlect.com';
-				break;
+			break;
 
 			case 'work_example_icon':
 
@@ -718,6 +718,170 @@ class Translations {
 
 			default:
 				return "Connect with me on LinkedIn";
+				break;
+
+		}
+
+	}
+
+	public function education_intro_to_generative_ai( $part, $lang ) {
+
+		switch ( $part ) {
+
+			case 'title':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Johdatus Generatiiviseen Tekoälyyn - Google Cloud";
+						break;
+
+					default:
+						return "Introduction to Generative AI Learning Path - Google Cloud";
+						break;
+
+				}
+
+				break;
+
+			case 'duration':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "2023";
+						break;
+
+					default:
+						return "2023";
+						break;
+
+				}
+
+				break;
+
+			case 'description':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Yleiskatsaus generaattisen tekoälyn konsepteihin, suurten kielimallien perusteista vastuullisen tekoälyn periaatteisiin.";
+						break;
+
+					default:
+						return "Overview of generative AI concepts, from the fundamentals of large language models to responsible AI principles.";
+						break;
+
+				}
+
+				break;
+
+			case 'certificate_href':
+
+				return 'https://www.cloudskillsboost.google/public_profiles/e3540342-a42c-4250-a87c-4be298f186c1';
+				break;
+
+			case 'certificate_icon':
+
+				return 'assets/img/graduation-cap-solid.svg';
+				break;
+
+			case 'certificate_text':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Avaa todistus";
+						break;
+
+					default:
+						return "Open certificate";
+						break;
+
+				}
+
+				break;
+
+		}
+
+	}
+
+	public function education_elements_of_ai( $part, $lang ) {
+
+		switch ( $part ) {
+
+			case 'title':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Elements of AI - MinnaLearn & Helsingin yliopisto";
+						break;
+
+					default:
+						return "Elements of AI - MinnaLearn & University of Helsinki";
+						break;
+
+				}
+
+				break;
+
+			case 'duration':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "2023";
+						break;
+
+					default:
+						return "2023";
+						break;
+
+				}
+
+				break;
+
+			case 'description':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Tekoälyn perusteet.";
+						break;
+
+					default:
+						return "Basics of AI.";
+						break;
+
+				}
+
+				break;
+
+			case 'certificate_href':
+
+				return 'https://certificates.mooc.fi/validate/8bfmrx3ujt8';
+				break;
+
+			case 'certificate_icon':
+
+				return 'assets/img/graduation-cap-solid.svg';
+				break;
+
+			case 'certificate_text':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Avaa todistus";
+						break;
+
+					default:
+						return "Open certificate";
+						break;
+
+				}
+
 				break;
 
 		}

@@ -7,6 +7,12 @@
  */
 
 $education_keys = array(
+	'education_intro_to_generative_ai' => array(
+		'certificate'
+	),
+	'education_elements_of_ai' => array(
+		'certificate'
+	),
 	'education_xedu' => array(),
 	'education_fsecure_cyber_mooc' => array(
 		'certificate'
