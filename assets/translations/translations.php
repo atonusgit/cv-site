@@ -312,6 +312,70 @@ class Translations {
 
 	}
 
+	public function button_docker_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Kaikkialle kontti, jos vain mahdollista.";
+				break;
+
+			default:
+				return "Let's containerize everything that's possible.";
+				break;
+
+		}
+
+	}
+
+	public function button_bash_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Minulle on vasta myöhemmin valjennut kuinka merkittävä työkalu Bash-kieli on. Yksi parhaista.";
+				break;
+
+			default:
+				return "It has only dawned on me later how significant a tool the Bash language is. One of the best.";
+				break;
+
+		}
+
+	}
+
+	public function button_python_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Kun Bash ei riitä, otetaan Python. Toki Python on oikeastaan ihan eri työkalu, ja olen tehnyt sillä monenlaisia automaatioita sekä tekoälymallin kouluttamista.";
+				break;
+
+			default:
+				return "When Bash is not enough, Python comes into play. Of course, Python is actually a completely different tool, and I've used it for various types of automation as well as training artificial intelligence models.";
+				break;
+
+		}
+
+	}
+
+	public function button_ansible_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Palvelimien massahallintaan on onneksi kehitetty Ansible sekä Ansible playbook. Olen töissä työskennellyt paljon Ansiblen parissa pitäen huolta palvelimien päivityksistä ja muista kilkkeistä.";
+				break;
+
+			default:
+				return "Fortunately, Ansible and Ansible Playbook have been developed for mass management of servers. I have worked extensively with Ansible in my job, taking care of server updates and other configurations.";
+				break;
+
+		}
+
+	}
+
 	public function button_sibelius_popover( $lang ) {
 
 		switch ( $lang ) {
@@ -417,11 +481,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Evermade Oy, Digital Agency - Web Developer";
+						return "Evermade Oy, Digital Agency - Care Team Lead & Automations";
 						break;
 
 					default:
-						return "Evermade Oy, Digital Agency - Web Developer";
+						return "Evermade Oy, Digital Agency - Care Team Lead & Automations";
 						break;
 
 				}
@@ -449,11 +513,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "";
+						return "Aloitin Evermadessa projektikehittäjänä verkkokauppojen ja integraatioiden parissa. Sitten siirryin Care-tiimiin, jossa palvelin asiakkaita pienkehittämisen parissa. Myöhemmin etenin Care-tiimin johtoon ja johdin myös työprosessiemme automatisoinnin sekä tietoturvan kehitystä.";
 						break;
 
 					default:
-						return "";
+						return "I started at Evermade as a project developer focusing on e-commerce and integrations. Later, I moved to the Care team, where I served clients in small-scale development. Eventually, I advanced to lead the Care team and also spearheaded the automation of our work processes as well as improvements in cybersecurity.";
 						break;
 
 				}
