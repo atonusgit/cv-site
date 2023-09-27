@@ -9,7 +9,7 @@
 $experience_keys = array(
 	'experience_evermade' => array(),
 	'experience_superlect' => array(
-		'work_example',
+//		'work_example',
 		'article'
 	),
 	'experience_massive_helsinki' => array()
