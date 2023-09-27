@@ -749,11 +749,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "2016";
+						return "2023";
 						break;
 
 					default:
-						return "2016";
+						return "2023";
 						break;
 
 				}
@@ -831,11 +831,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "2016";
+						return "2023";
 						break;
 
 					default:
-						return "2016";
+						return "2023";
 						break;
 
 				}
