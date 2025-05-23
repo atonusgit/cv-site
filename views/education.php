@@ -21,9 +21,9 @@ $education_keys = array(
 	'education_sibelius_academy' => array(
 		'certificate'
 	),
-	'education_pohjis' => array(
-		'certificate'
-	),
+	// 'education_pohjis' => array(
+	// 	'certificate'
+	// ),
 );
 
 ?>

@@ -77,11 +77,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "Iki-innostunut ohjelmistokehittäjä, jolla on vahva urahistoria musiikkialalta.</p><p class='small'><a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank' class='text-info no-print'>Lue uranvaihdostarinani</a>";
+				return "Luova kehittäjä, jonka tekoäly on sytyttänyt uudelleen.";
 				break;
 
 			default:
-				return "Forever enthusiastic software developer with a strong career background in music.</p><p class='small'><a href='https://medium.com/@antonvalle/tein-uranvaihdoksen-s%C3%A4velt%C3%A4j%C3%A4st%C3%A4-koodariksi-d62ff67c6171' target='_blank' class='text-info no-print'>Read my career shifting story (in Finnish)</a>";
+				return "A creative developer rekindled by artificial intelligence.";
 				break;
 
 		}
@@ -189,11 +189,90 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "<p>Olen kokenut ohjelmistokehittäjä ja IT-osaajien tiiminvetäjä, jolla on vahva näkemys teknologian ja liiketoiminnan yhdistämisestä. Olen erikoistunut verkkosivujen ja verkkokauppojen kehittämiseen sekä prosessien tehostamiseen automaation ja tekoälyn avulla. Yksi keskeisistä tavoitteistani on hyödyntää näitä työkaluja liiketoimintaprosessien parantamiseksi. Vaikka taustani on tekninen, olen myös luonteva esiintyjä ja kouluttaja. Yli kymmenen vuoden kokemukseni musiikkialalla, erityisesti klassisen, elokuva- ja pelimusiikin parissa, on antanut minulle arvokkaan näkökulman luovuuden ja yksityiskohtien huomioimisen merkityksestä.</p><p>Tutustu työkokemukseeni ja projekteihini tällä sivulla saadaksesi kattavan kuvan osaamisestani. Pidän rohkeista kokeiluista ja yrityksistä luoda jotain uutta. Viihdyn myös mielelläni luovien ihmisten seurassa. test2</p>";
+				return "<p>Olen tekoälyn soveltamiseen erikoistunut teknologia-asiantuntija ja tiiminvetäjä, jolla on yli 10 vuoden kokemus ohjelmistokehityksestä, automaatiosta ja digitaalisten tuotteiden rakentamisesta. Taustani on luovilla aloilla ja startup-yrittäjyydessä. Viime vuosina olen keskittynyt tekoälyratkaisujen kehittämiseen sekä henkilöstön ja asiakkaiden tekoälyosaamisen lisäämiseen. Olen tunnettu aloitteellisuudestani, syvällisestä asiantuntemuksestani ja vaikuttavien teknologisten ratkaisujen edistämisestä.</p>";
 				break;
 
 			default:
-				return "<p>I am an experienced software developer and team leader in IT, with a strong vision for integrating technology and business. I specialize in web development and e-commerce, as well as streamlining processes through automation and artificial intelligence. One of my key objectives is to leverage these tools to improve business processes. Although my background is technical, I am also a natural presenter and educator. My over ten years of experience in the music industry, particularly in classical, film, and game music, has given me a valuable perspective on the importance of creativity and attention to detail.</p><p>Explore my work history and projects on this page to get a comprehensive view of my expertise. I enjoy bold experiments and attempts to create something new. I also thrive in the company of creative individuals.</p>";
+				return "<p>I am a technology expert and team leader specializing in the application of artificial intelligence, with over 10 years of experience in software development, automation and building digital products. My background is in the creative industry and startup entrepreneurship. In recent years, my focus has been on developing artificial intelligence solutions, as well as increasing the AI competence of staff and customers. I am known for my initiative, deep expertise and promoting impactful technological solutions.</p>";
+				break;
+
+		}
+
+	}
+
+	public function button_ai_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Olen integroinut tekoälyä laajasti eri toimintoihin ja olen myös rakentanut tekoälyavusteisen peurakarkottimen, joka häätää peurat huutamalla 'HUS, mene pois peura!'";
+				break;
+
+			default:
+				return "I've integrated AI into various functions and I've also built an AI-assisted deer repeller, which chases peura by shouting 'HUS, go away peura!'";
+				break;
+
+		}
+
+	}
+
+	public function button_api_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Olen tehnyt lukuisia API-integraatioita eri monimutkaisuusasteissa.";
+				break;
+
+			default:
+				return "I have created many API integrations in various complexity levels.";
+				break;
+
+		}
+
+	}
+	public function button_fullstack_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Pidän työskentelystä Linuxin terminaalissa, Python-, Bash-, PHP- ja MySQL-backendissä kuin myös frontendissä moninaisine vaihtoehtoineen.";
+				break;
+
+			default:
+				return "I enjoy working in the Linux terminal, Python, Bash, PHP and MySQL backend, as well as frontend in various ways.";
+				break;
+
+		}
+
+	}
+
+	public function button_cdci_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Olen käyttänyt CD/CI-työkaluja, mm. GitHub Actions ja Bitbucket Pipelines.";
+				break;
+
+			default:
+				return "I have used CD/CI tools, such as GitHub Actions and Bitbucket Pipelines.";
+				break;
+
+		}
+
+	}
+
+	public function button_azure_popover( $lang ) {
+
+		switch ( $lang ) {
+
+			case 'fi':
+				return "Olen käyttänyt Azure OpenAI:n tekoälypalvelua, sekä tutustunut Azuren muihin palveluihin.";
+				break;
+
+			default:
+				return "I have used Azure OpenAI's artificial intelligence service, and familiarized myself with Azure's other services.";
 				break;
 
 		}
@@ -269,11 +348,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "Suosikkiohjelmointikieleni tällä hetkellä, koska olen päätynyt työskentelemään sen parissa pitkään.";
+				return "Olen päätynyt työskentelemään PHP:n parissa pitkään, ja olen käyttänyt sitä monenlaisissa projekteissa.";
 				break;
 
 			default:
-				return "My favorite language at the moment, since I've been working with it for so long.";
+				return "I have been working with PHP for a long time, and I have used it in various projects.";
 				break;
 
 		}
@@ -301,11 +380,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "On huvittavaa, että Rasperry Pi:n opiskelu auttoi minua suuresti ymmärtämään AWS:ää. Tällä hetkellä työstän lohkoketjuprojektia, jossa olen kytkenyt kaksi AWS EC2 -palvelinta samaan ketjuun ns. noodeina. Tämän lohkoketjun tavoite on tarjota vahva taustajärjestelmä Superlect-koulutuskrediittien hallinnointiin.";
+				return "Olen tutustunut muutamiin AWS:n palveluihin, mm. EC2- ja S3-palveluihin.";
 				break;
 
 			default:
-				return "It's funny, but learning Rasbperry Pi really helped me to understand AWS. I have an ongoing blockchain project in AWS. Currently I've hooked up two EC2 servers to the blockchain as nodes. The purpose of this blockchain is to provide strong backend to Superlect education credits.";
+				return "I have familiarized myself with several AWS services, including EC2 and S3.";
 				break;
 
 		}
@@ -481,11 +560,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Evermade Oy, Digital Agency - Care Team Lead & Automations";
+						return "Evermade Oy, Digital Agency - AI Lead & Care Team Lead";
 						break;
 
 					default:
-						return "Evermade Oy, Digital Agency - Care Team Lead & Automations";
+						return "Evermade Oy, Digital Agency - AI Lead & Care Team Lead";
 						break;
 
 				}
@@ -513,11 +592,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Aloitin Evermadessa projektikehittäjänä verkkokauppojen ja integraatioiden parissa. Sitten siirryin Care-tiimiin, jossa palvelin asiakkaita pienkehittämisen parissa. Myöhemmin etenin Care-tiimin johtoon ja johdin myös työprosessiemme automatisoinnin sekä tietoturvan kehitystä.";
+						return "Aloitin Evermadessa projektikehittäjänä verkkokauppojen ja integraatioiden parissa. Sitten siirryin Care-tiimiin, jossa palvelin asiakkaita pienkehittämisen parissa. Myöhemmin etenin Care-tiimin johtoon ja johdin myös työprosessiemme automatisoinnin sekä tietoturvan kehitystä. Nyt toimin AI Lead -roolissa, ja olen laatinut Evermaden tekoälystrategian, sekä vienyt sitä eteenpäin.";
 						break;
 
 					default:
-						return "I started at Evermade as a project developer focusing on e-commerce and integrations. Later, I moved to the Care team, where I served clients in small-scale development. Eventually, I advanced to lead the Care team and also spearheaded the automation of our work processes as well as improvements in cybersecurity.";
+						return "I started at Evermade as a project developer working on online stores and integrations. Then I moved to the Care team, where I served customers with small-scale development. Later, I progressed to the Care team lead and also led the development of our work process automation and information security. Now I work in the AI Lead role, and I have created Evermade's artificial intelligence strategy and taken it forward.";
 						break;
 
 				}
