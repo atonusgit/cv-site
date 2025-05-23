@@ -48,7 +48,7 @@
 				<div class="row justify-content-center py-5">
 					<div class="col-md-8 text-center text-light">
 						<form id="contact-me" action="process/post.php" method="post">
-							<input type="hidden" name="postToken" value="<?php echo $token; ?>">
+<!--							<input type="hidden" name="postToken" value="<?php echo $token; ?>">-->
 							<input type="hidden" name="initChoice" value="4">
 							<input type="hidden" name="lang" value="<?php
 
