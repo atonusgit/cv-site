@@ -18,12 +18,17 @@ $ts_button_popover_keys = array(
 	'Bash'				=> 'button_bash_popover',
 	'Python'			=> 'button_python_popover',
 	'Ansible'			=> 'button_ansible_popover',
-	'Sibelius'			=> 'button_sibelius_popover',
-	'Cubase'			=> 'button_cubase_popover',
-	'Renoise Tracker'	=> 'button_renoise_tracker_popover',
-	'PureData'			=> 'button_puredata_popover',
-	'Renoise Tracker'	=> 'button_renoise_tracker_popover',
-	'Music theory'		=> 'button_music_theory_popover',
+	'Azure'				=> 'button_azure_popover',
+	'CD/CI'				=> 'button_cdci_popover',
+	'Full-stack'		=> 'button_fullstack_popover',
+	'API'				=> 'button_api_popover',
+	'AI'				=> 'button_ai_popover',
+	// 'Sibelius'			=> 'button_sibelius_popover',
+	// 'Cubase'			=> 'button_cubase_popover',
+	// 'Renoise Tracker'	=> 'button_renoise_tracker_popover',
+	// 'PureData'			=> 'button_puredata_popover',
+	// 'Renoise Tracker'	=> 'button_renoise_tracker_popover',
+	// 'Music theory'		=> 'button_music_theory_popover',
 );
 
 ?>

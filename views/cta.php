@@ -28,7 +28,7 @@
 						<div class="container">
 							<div class="row align-items-center form-group" style="min-height: 112px;">
 								<div class="col-auto">
-									<img class="round-image chat-image" src="assets/img/anton_portrait.jpg">
+									<img class="round-image chat-image" src="assets/img/anton_portrait_2.jpg">
 								</div>
 								<div class="col-lg-auto col px-0">
 									<div class="speech-bubble speech-bubble-anton text-light">
@@ -48,7 +48,7 @@
 				<div class="row justify-content-center py-5">
 					<div class="col-md-8 text-center text-light">
 						<form id="contact-me" action="process/post.php" method="post">
-							<input type="hidden" name="postToken" value="<?php echo $token; ?>">
+<!--							<input type="hidden" name="postToken" value="<?php echo $token; ?>">-->
 							<input type="hidden" name="initChoice" value="4">
 							<input type="hidden" name="lang" value="<?php
 

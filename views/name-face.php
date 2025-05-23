@@ -27,7 +27,7 @@
 			</div>
 			<div class="col-md-3"></div>
 			<div class="col-md-4 text-center">
-				<img class="round-image" src="assets/img/anton_portrait.jpg">
+				<img class="round-image top-portrait" src="assets/img/anton_portrait_2.jpg">
 			</div>
 		</div>
 	</div>
