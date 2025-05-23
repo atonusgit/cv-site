@@ -146,7 +146,7 @@ const updateChat = async ( e, wait_time = 2500 ) => {
 				<div class="container">\
 					<div class="row align-items-center form-group" style="min-height: 112px;">\
 						<div class="col-auto">\
-							<img class="round-image chat-image" style="display: none;" src="assets/img/anton_portrait.jpg">\
+							<img class="round-image chat-image" style="display: none;" src="assets/img/anton_portrait_2.jpg">\
 						</div>\
 						<div class="col-lg-auto col px-0">\
 							<div class="speech-bubble speech-bubble-anton text-light" style="display: none;">\

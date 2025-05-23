@@ -102,9 +102,9 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="assets/js/html2canvas.min.js"></script>
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	<link rel="icon" href="assets/img/anton_portrait.jpg" sizes="32x32">
-	<link rel="icon" href="assets/img/anton_portrait.jpg" sizes="192x192">
-	<link rel="apple-touch-icon-precomposed" href="assets/img/anton_portrait.jpg">
+	<link rel="icon" href="assets/img/anton_portrait_2.jpg" sizes="32x32">
+	<link rel="icon" href="assets/img/anton_portrait_2.jpg" sizes="192x192">
+	<link rel="apple-touch-icon-precomposed" href="assets/img/anton_portrait_2.jpg">
 	
 	<!-- Begin Inspectlet Asynchronous Code -->
 	<script type="text/javascript">
