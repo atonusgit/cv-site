@@ -59,7 +59,7 @@ if ( !empty( $_POST['postToken'] )
 
 			$token = ( new Security )->getToken( 'responseToken' );
 			unset( $_SESSION['postToken'] );
-			header( "Location: http://" . $_SERVER['HTTP_HOST'] . "/cv/?lang=" . $_POST['lang'] . "&thankyou=1&token=" . $_SESSION['responseToken'] );
+			header( "Location: https://" . $_SERVER['HTTP_HOST'] . "/cv/?lang=" . $_POST['lang'] . "&thankyou=1&token=" . $_SESSION['responseToken'] );
 
 		} else {
 
@@ -72,7 +72,7 @@ if ( !empty( $_POST['postToken'] )
 
 		$token = ( new Security )->getToken( 'responseToken' );
 		unset( $_SESSION['postToken'] );
-		header( "Location: http://" . $_SERVER['HTTP_HOST'] . "/cv/?lang=" . $_POST['lang'] . "&empty=1&token=" . $_SESSION['responseToken'] );
+		header( "Location: https://" . $_SERVER['HTTP_HOST'] . "/cv/?lang=" . $_POST['lang'] . "&empty=1&token=" . $_SESSION['responseToken'] );
 
 	} else {
 

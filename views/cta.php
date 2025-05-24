@@ -17,7 +17,7 @@
 
 					?>
 				</h2>
-				<p class="small">Powered by <i><strong><a href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" class='text-secondary'>Antonoo</a></strong></i></p>
+				<p class="small">Powered by <i><strong><a href="<?php echo "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" class='text-secondary'>Antonoo</a></strong></i></p>
 			</div>
 		</div>
 		<input type="hidden" id="csrf-token" name="postToken" value="<?php echo $token; ?>">

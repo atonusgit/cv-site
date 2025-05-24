@@ -31,7 +31,7 @@ if ( isset( $_GET['thankyou'] )
 						</div>
 						<div class="row">
 							<div class="col text-right">
-								<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/cv/?lang=<?php
+								<a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/cv/?lang=<?php
 
 									if ( isset( $_GET['lang'] )
 										&& $_GET['lang'] == 'fi' ) {

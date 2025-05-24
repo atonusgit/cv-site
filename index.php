@@ -53,7 +53,7 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 		echo $translations->meta_title( isset( $_GET['lang'] ) ? $_GET['lang'] : null );
 
 		?>">
-	<meta property="og:image" content="http://<?php echo $_SERVER['HTTP_HOST']; ?>/cv/assets/img/anton_paja.jpg">
+	<meta property="og:image" content="https://<?php echo $_SERVER['HTTP_HOST']; ?>/cv/assets/img/anton_paja.jpg">
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="<?php
 
@@ -74,7 +74,7 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 		echo $translations->meta_description( isset( $_GET['lang'] ) ? $_GET['lang'] : null );
 
 		?>">
-	<meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST']; ?>/cv/<?php
+	<meta property="og:url" content="https://<?php echo $_SERVER['HTTP_HOST']; ?>/cv/<?php
 
 		if ( isset( $_GET['lang'] )
 			&& $_GET['lang'] == 'fi' ) {
