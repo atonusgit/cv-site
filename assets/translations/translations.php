@@ -205,11 +205,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "Olen integroinut tekoälyä laajasti eri toimintoihin ja olen myös rakentanut tekoälyavusteisen peurakarkottimen, joka häätää peurat huutamalla 'HUS, mene pois peura!'";
+				return "Arkikäytössä tällä hetkellä ChatGPT, Gemini, Cursor, GitHub Copilot, fal.ai ja Azure OpenAI sekä hallitsen perusteet LUMI-supertietokoneella tekoälykouluttamiseen.";
 				break;
 
 			default:
-				return "I've integrated AI into various functions and I've also built an AI-assisted deer repeller, which chases peura by shouting 'HUS, go away peura!'";
+				return "I currently use ChatGPT, Gemini, Cursor, GitHub Copilot, fal.ai and Azure OpenAI in my daily life, and I am also mastering the basics of artificial intelligence training with the LUMI supercomputer.";
 				break;
 
 		}
@@ -231,6 +231,7 @@ class Translations {
 		}
 
 	}
+
 	public function button_fullstack_popover( $lang ) {
 
 		switch ( $lang ) {
@@ -284,11 +285,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "Olen toteuttanut WordPress:illä mm. kauppapaikka-alustan, verkkokauppoja ja tavanomaisia verkkosivuja.";
+				return "Olen toteuttanut WordPressillä monipuolisia ratkaisuja, kuten kauppapaikka-alustan, useita verkkokauppoja, tavanomaisia verkkosivustoja sekä tekoälypohjaisen keskustelevan käyttöliittymän.";
 				break;
 
 			default:
-				return "I have implemented with WordPress e.g. marketplace platform, online stores and conventional websites.";
+				return "I have implemented a range of solutions with WordPress, including a marketplace platform, multiple e-commerce sites, conventional websites, and an AI-powered conversational interface.";
 				break;
 
 		}
@@ -560,11 +561,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Evermade Oy, Digital Agency - AI Lead & Care Team Lead";
+						return "Evermade Oy, AI Lead & Care Team Lead";
 						break;
 
 					default:
-						return "Evermade Oy, Digital Agency - AI Lead & Care Team Lead";
+						return "Evermade Oy, AI Lead & Care Team Lead";
 						break;
 
 				}
@@ -592,11 +593,53 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Aloitin Evermadessa projektikehittäjänä verkkokauppojen ja integraatioiden parissa. Sitten siirryin Care-tiimiin, jossa palvelin asiakkaita pienkehittämisen parissa. Myöhemmin etenin Care-tiimin johtoon ja johdin myös työprosessiemme automatisoinnin sekä tietoturvan kehitystä. Nyt toimin AI Lead -roolissa, ja olen laatinut Evermaden tekoälystrategian, sekä vienyt sitä eteenpäin.";
+						return "Suunnittelin ja olen edistänyt yhtiön tekoälystrategiaa sekä kehittänyt automaatio- ja tekoälyratkaisuja, kuten <a href='https://www.evermade.fi/fi/artikkeli/autocare-automatisoitua-yllapitoa/' target='_blank'>AutoCare</a>- ja <a href='https://www.evermade.fi/story/state-of-development-at-evermade-2025/#:~:text=Fortress' target='_blank'>Fortress</a>-järjestelmät. Rakensin keskustelevan käyttöliittymätuotteen WordPressiin. Johdan 9 hengen ylläpitotiimiä, olen kouluttanut henkilöstöä ja asiakkaita tekoälyn hyödyntämisessä sekä kirjoittanut artikkeleita tekoälyn arvoista ja käytännöistä.";
 						break;
 
 					default:
-						return "I started at Evermade as a project developer working on online stores and integrations. Then I moved to the Care team, where I served customers with small-scale development. Later, I progressed to the Care team lead and also led the development of our work process automation and information security. Now I work in the AI Lead role, and I have created Evermade's artificial intelligence strategy and taken it forward.";
+						return "I have designed and advanced the company's AI strategy, and developed automation and AI solutions such as the <a href='https://www.evermade.fi/fi/artikkeli/autocare-automatisoitua-yllapitoa/' target='_blank'>AutoCare</a> and <a href='https://www.evermade.fi/story/state-of-development-at-evermade-2025/#:~:text=Fortress' target='_blank'>Fortress</a> systems. I built a conversational interface product for WordPress. I lead a 9-person maintenance team, have trained staff and clients in leveraging AI, and written articles on the values and practical applications of artificial intelligence.";
+						break;
+
+				}
+
+				break;
+
+			case 'article_href':
+
+				return 'https://www.evermade.fi/fi/artikkeli/tekoaly-on-parhaimmillaan-silloin-kun-se-arkistuu/';
+				break;
+
+			case 'article_icon':
+
+				return 'assets/img/book-open-solid.svg';
+				break;
+
+			case 'article_text':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Lue artikkeli";
+						break;
+
+					default:
+						return "Read an article (in Finnish)";
+						break;
+
+				}
+
+				break;
+
+			case 'article_popover':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Evermade - Tekoäly on parhaimmillaan silloin, kun se arkistuu";
+						break;
+
+					default:
+						return "Evermade - Tekoäly on parhaimmillaan silloin, kun se arkistuu (in Finnish)";
 						break;
 
 				}
@@ -604,7 +647,6 @@ class Translations {
 				break;
 
 		}
-
 	}
 
 	public function experience_superlect( $part, $lang ) {
@@ -661,8 +703,8 @@ class Translations {
 
 			case 'work_example_href':
 
-				return 'https://app.superlect.com';
-			break;
+				return 'https://web.archive.org/web/20200228044032/https://app.superlect.com/en/';
+				break;
 
 			case 'work_example_icon':
 
@@ -679,6 +721,22 @@ class Translations {
 
 					default:
 						return "Check out the work sample";
+						break;
+
+				}
+
+				break;
+
+			case 'work_example_popover':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Arkistoitu (web.archive.org)";
+						break;
+
+					default:
+						return "Archived (web.archive.org)";
 						break;
 
 				}
@@ -1346,11 +1404,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "Videopelit, elektroniikka, Raspberry Pi, Arduino, sähköpyöräily ja kvanttiohjelmoinnin opiskelu.";
+				return "Pyöräily, elektroniikka, Raspberry Pi, Arduino ja 3D-tulostaminen. Kehitin ja konekoulutin Raspberry Pi -tietokoneella ja YOLOv8n-hahmontunnistusmallilla toimivan <a href='https://www.linkedin.com/feed/update/urn:li:activity:7199788929271619585/' target='_blank'>peurakarkottimen</a> 🦌, joka häätää puutarhastamme peurat huutamalla \"HUS, mene pois peura!\". Pidän työystäväni Jaakko Alajoen kanssa positiivista tekoälyaiheista podcastia <a href='https://aikahyvamaailma.com' target='_blank'>AIka Hyvä Maailma</a>.";
 				break;
 
 			default:
-				return "Video games, electronics, Raspberry Pi, Arduino, electric biking and learning about quantum computing.";
+				return "Cycling, electronics, Raspberry Pi, Arduino and 3D printing. I developed and machine-trained a <a href='https://www.linkedin.com/feed/update/urn:li:activity:7199788929271619585/' target='_blank'>deer repeller</a> 🦌 using a Raspberry Pi computer and the YOLOv8n pattern recognition model that chases deer out of our garden by shouting \"HUS, mene pois peura!\". I host a positive AI podcast called <a href='https://aikahyvamaailma.com' target='_blank'>AIka Hyvä Maailma</a> with my co-worker Jaakko Alajoki.";
 				break;
 
 		}

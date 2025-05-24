@@ -7,7 +7,7 @@
  */
 
 ?>
-<section id="testimonials" class="bg-info inner-top-shadow testimonials-bg parallax">
+<section id="testimonials" class="bg-info inner-top-shadow testimonials-bg parallax page-break">
 	<div class="container">
 		<div class="row py-5 align-items-center">
 			<div class="col-md py-3">
