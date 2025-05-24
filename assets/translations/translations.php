@@ -189,11 +189,11 @@ class Translations {
 		switch ( $lang ) {
 
 			case 'fi':
-				return "<p>Olen tekoälyn soveltamiseen erikoistunut teknologia-asiantuntija ja tiiminvetäjä, jolla on yli 10 vuoden kokemus ohjelmistokehityksestä, automaatiosta ja digitaalisten tuotteiden rakentamisesta. Taustani on luovilla aloilla ja startup-yrittäjyydessä. Viime vuosina olen keskittynyt tekoälyratkaisujen kehittämiseen sekä henkilöstön ja asiakkaiden tekoälyosaamisen lisäämiseen. Olen tunnettu aloitteellisuudestani, syvällisestä asiantuntemuksestani ja vaikuttavien teknologisten ratkaisujen edistämisestä.</p>";
+				return "<p>Olen tekoälyn soveltamiseen erikoistunut teknologia-asiantuntija ja tiiminvetäjä, jolla on yli 10 vuoden kokemus ohjelmistokehityksestä, automaatiosta ja digitaalisten tuotteiden rakentamisesta. Olen kehittänyt ja johtanut automaatio- ja tekoälyratkaisuja, jotka on suunniteltu käsittelemään suuria datamääriä ja tukemaan laajaa verkkosivujen massaylläpitoa, varmistaen korkean saatavuuden ja toimintavarmuuden kriittisissäkin olosuhteissa. Taustani on luovilla aloilla ja startup-yrittäjyydessä. Viime vuosina olen keskittynyt tekoälyratkaisujen kehittämiseen sekä henkilöstön ja asiakkaiden tekoälyosaamisen lisäämiseen. Olen tunnettu aloitteellisuudestani, syvällisestä asiantuntemuksestani ja vaikuttavien teknologisten ratkaisujen edistämisestä.</p>";
 				break;
 
 			default:
-				return "<p>I am a technology expert and team leader specializing in the application of artificial intelligence, with over 10 years of experience in software development, automation and building digital products. My background is in the creative industry and startup entrepreneurship. In recent years, my focus has been on developing artificial intelligence solutions, as well as increasing the AI competence of staff and customers. I am known for my initiative, deep expertise and promoting impactful technological solutions.</p>";
+				return "<p>I am a technology expert and team leader specializing in the application of artificial intelligence, with over 10 years of experience in software development, automation and building digital products. I have developed and led automation and artificial intelligence solutions designed to process large amounts of data and support large-scale mass website maintenance, ensuring high availability and reliability even in critical conditions. My background is in creative industries and startup entrepreneurship. In recent years, I have focused on developing artificial intelligence solutions and increasing the AI competence of staff and customers. I am known for my initiative, deep expertise and promoting impactful technological solutions.</p>";
 				break;
 
 		}
