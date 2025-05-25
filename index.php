@@ -182,6 +182,7 @@ echo $translations->console_greetings( isset( $_GET['lang'] ) ? $_GET['lang'] : 
 				$( "canvas" ).css( "-webkit-transform", "translatey(-" + $( window ).scrollTop() + "px)")
 				toggleNavbarShadow()
 				toggleNavbarCornerLogo()
+				hideNavbarOnTop()
 				launchChat()
 
 			} )

@@ -166,3 +166,42 @@ $( '.nav-link' ).on( 'click', () => {
 	}
 
 } )
+
+$(' #header .navbar-toggler' ).on( 'click', function () {
+	const button = $( this );
+	const header = $( '#header' );
+  
+	setTimeout( function () {
+
+		if ( button.attr( 'aria-expanded' ) === 'true' ) {
+
+			header.addClass( 'nav-collapsed' );
+
+		} else {
+
+			header.removeClass( 'nav-collapsed' )
+
+		}
+
+	}, 10 )
+
+} )
+
+window.hideNavbarOnTop = () => {
+
+	const header = $( '#header' )
+	header.removeClass( 'nav-collapsed' )
+
+	if ( document.body.scrollTop < 10 ) {
+
+		const navbar = $( '#navbarNavDropdown' )
+
+		if ( navbar.hasClass( 'show' ) ) {
+
+			navbar.collapse( 'hide' )
+
+		}
+
+	}
+
+}

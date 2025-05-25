@@ -85,6 +85,10 @@ a:hover {
 	height: 106px;
 }
 
+#header nav-collapsed {
+	opacity: 1;
+}
+
 #header-blur {
 	overflow: hidden;
 	z-index: 1;
@@ -178,6 +182,7 @@ a:hover {
 @media (max-width: 991px) {
 	.language-toggle {
 		margin-top: 8px;
+		margin-bottom: 8px;
 		margin-left: 0;
 	}
 }
