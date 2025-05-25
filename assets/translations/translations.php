@@ -597,7 +597,7 @@ class Translations {
 						break;
 
 					default:
-						return "I have designed and advanced the company's AI strategy, and developed automation and AI solutions such as the <a href='https://www.evermade.fi/fi/artikkeli/autocare-automatisoitua-yllapitoa/' target='_blank'>AutoCare</a> and <a href='https://www.evermade.fi/story/state-of-development-at-evermade-2025/#:~:text=Fortress' target='_blank'>Fortress</a> systems. I built a conversational interface product for WordPress. I lead a 9-person maintenance team, have trained staff and clients in leveraging AI, and written articles on the values and practical applications of artificial intelligence.";
+						return "I have designed and advanced the company's AI strategy, and developed automation and AI solutions such as the <a href='https://www.evermade.fi/story/autocare-automated-maintenance/' target='_blank'>AutoCare</a> and <a href='https://www.evermade.fi/story/state-of-development-at-evermade-2025/#:~:text=Fortress' target='_blank'>Fortress</a> systems. I built a conversational interface product for WordPress. I lead a 9-person maintenance team, have trained staff and clients in leveraging AI, and written articles on the values and practical applications of artificial intelligence.";
 						break;
 
 				}
