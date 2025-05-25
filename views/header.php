@@ -67,11 +67,11 @@ $header_keys = array(
 						if ( isset( $_GET['lang'] )
 							&& $_GET['lang'] == 'fi' ) {
 
-							echo "<a href='?lang=en' class='btn btn-secondary'>ENG</a>";
+							echo "<a href='?lang=en' class='language-toggle btn btn-secondary'>ENG</a>";
 
 						} else {
 
-							echo "<a href='?lang=fi' class='btn btn-secondary'>FI</a>";
+							echo "<a href='?lang=fi' class='language-toggle btn btn-secondary'>FI</a>";
 
 						}
 
