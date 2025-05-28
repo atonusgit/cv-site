@@ -830,11 +830,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Tuotin ääntä ja musiikkia moninaisiin projekteihin (kaupallinen, kulttuuri, indie). Järjestin koulutuksia ja toimin puhujana seminaareissa. Hoidin yrityksen kirjanpidon ja vastasin yrityksen varallisuudesta. Olin yksi yrityksen perustajista ja johdin sitä sen uljaasta syntymästä aina sen arvokkaaseen loppuun saakka.";
+						return "Tuotin ääntä ja musiikkia moninaisiin projekteihin (kaupallinen, kulttuuri, indie). Järjestin koulutuksia ja toimin puhujana seminaareissa. Hoidin yrityksen kirjanpidon ja vastasin yrityksen varallisuudesta. Koodailin myös skriptejä mm. kirjanpidon automatisointiin. Olin yksi yrityksen perustajista ja johdin sitä sen uljaasta syntymästä aina sen arvokkaaseen loppuun saakka.";
 						break;
 
 					default:
-						return "I produced audio for variety of productions (commercial, cultural, indie). I held classes and spoke at seminars. I managed accounting and finances. I co-founded and lead the company from it's glorious beginning to it’s graceful end.";
+						return "I produced audio for variety of productions (commercial, cultural, indie). I held classes and spoke at seminars. I managed accounting and finances. I also developed scripts to automate accounting. I co-founded and lead the company from it's glorious beginning to it's graceful end.";
 						break;
 
 				}

@@ -70,6 +70,11 @@ a:hover {
 	height: 150px;
 }
 
+.anton a {
+	color: #f8f9fa !important;
+        text-decoration: underline;
+}
+
 .chat-image {
 	width: 90px;
 	height: 90px;
@@ -148,6 +153,11 @@ a:hover {
 
 .speech-bubble-anton {
 	background: #17a2b8;
+}
+
+.speech-bubble-anton a {
+	color: #f8f9fa !important;
+        text-decoration: underline;
 }
 
 .speech-bubble-visitor {

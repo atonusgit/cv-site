@@ -22,10 +22,12 @@ if ( get( 'lang' ) == 'fi' ) {
 	var a = "Mitä mahdat etsiä?"
 	var b = "Mukavaa. Musiikki oli pitkään päätyöni. Olen säveltänyt musiikkia mm. elokuviin, peleihin, trackereille ❤️, kuoroille, orkestereille ja teslakäämille ⚡⚡⚡ Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
 	var c = "Siistiä! Haaveilin koodaustaidosta jo varhain, mutta luulin, ettei ohjelmointi olisi tällaisen taiteilijahörhön hommaa <epic>🤦</epic>. Löysin todellisen kipinän koodaamiseen yllättäen sävellysopettajani kautta. Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
-	var d = "Selvä. Selaile rauhassa 😌 Saatoit jo huomata, että tämä sivu on täynnä JavaScriptiä, mutta tiesitkö, että se toimii myös moitteetta ilman? Mikäli sinulla herää kysyttävää, niin laita rohkeasti viesti ja kerro kuinka voisin olla avuksi?"
-	var e = "Kiitos viestistäsi! Olen pian yhteydessä!"
+	var d = "No niin, ollaan asian ytimessä! Kävin hiljattain koulutuksen <a href='https://lumi-supercomputer.eu/lumi_supercomputer/' target='_blank'>LUMI-supertietokoneen</a> valjastamisesta tekoälykoulutukseen. Azuren OpenAI ympäristö on myös tullut tutuksi. Yhtenä kesänä luin EU:n tekoälyasetuksen kannesta kanteen, ja lasten kanssa tehtiin soturikissakuvien generointipeli 🐈. Jatketaanko juttua livenä? Kerro nimesi, yhteystietosi ja kuinka voisin olla avuksi?"
+	var e = "Selvä. Selaile rauhassa 😌 Saatoit jo huomata, että tämä sivu on täynnä JavaScriptiä, mutta tiesitkö, että se toimii myös moitteetta ilman? Mikäli sinulla herää kysyttävää, niin laita rohkeasti viesti ja kerro kuinka voisin olla avuksi?"
+	var f = "Kiitos viestistäsi! Olen pian yhteydessä!"
 	var textMusic = "Muusikkoa"
 	var textProgramming = "Ohjelmoijaa"
+	var textAI = "Tekoälykehittäjää"
 	var textJustBrowsing = "Selailen vain..."
 	var textTextareaPlaceholder = "Hei Anton, nimeni on ..."
 	var textSubmit = "Lähetä"
@@ -45,10 +47,12 @@ if ( get( 'lang' ) == 'fi' ) {
 	var a = "What are you looking for?"
 	var b = "Cool. For a long time music was my main profession. I\'ve scored music for i.e. movies, games, trackers ❤️, choirs, orchestras and a tesla coil ⚡⚡⚡ Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
 	var c = "Great! I was dreaming about acquiring the skills of coding at an early age, but I thought programming wouldn't be for such an artisy goof like me <epic>🤦</epic>. Surprisingly, I got the spark for coding from my composing teacher. Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
-	var d = "Ok. Feel free to continue browsing 😌 You may have noticed that this site is fully packed with JavaScript, but did you know that it also works completely without it? If you have any questions, please don\'t hesitate to drop a message and tell me how can I help you."
-	var e = "Thank you for your message! I\'ll be in touch with you shortly!"
-	var textMusic = "A musician"
-	var textProgramming = "A programmer"
+	var d = "Alright, now we're talking! I recently completed a course on utilizing the <a href='https://lumi-supercomputer.eu/lumi_supercomputer/' target='_blank'>LUMI supercomputer</a> to train AI. I've also gotten familiar with Azure's OpenAI environment. One summer, I read the entire EU AI Act cover to cover, and my kids and I created a warrior cat image generation game 🐈. Should we continue this conversation? Please, tell me your name, contact info and how could I help you?"
+	var e = "Ok. Feel free to continue browsing 😌 You may have noticed that this site is fully packed with JavaScript, but did you know that it also works completely without it? If you have any questions, please don\'t hesitate to drop a message and tell me how can I help you."
+	var f = "Thank you for your message! I\'ll be in touch with you shortly!"
+	var textMusic = "Musician"
+	var textProgramming = "Programmer"
+	var textAI = "AI engineer"
 	var textJustBrowsing = "I\\'m just browsing..."
 	var textTextareaPlaceholder = "Hi Anton, my name is ..."
 	var textSubmit = "Send"
@@ -62,7 +66,8 @@ var antonMessages = {
 	2: b,
 	3: c,
 	4: d,
-	5: e
+	5: e,
+	6: f
 
 }
 
@@ -88,7 +93,9 @@ window.launchChat = async () => {
 									</a>\
 									<a href="javascript:;" onclick="handleChatResponse( { 0: 3, 1: \'' + textProgramming + '\' } )" class="btn btn-light my-1">' + textProgramming + '\
 									</a>\
-									<a href="javascript:;" onclick="handleChatResponse( { 0: 4, 1: \'' + textJustBrowsing + '\' } )" class="btn btn-light my-1">' + textJustBrowsing.replace( '\\', '' ) + '\
+									<a href="javascript:;" onclick="handleChatResponse( { 0: 4, 1: \'' + textAI + '\' } )" class="btn btn-light my-1">' + textAI.replace( '\\', '' ) + '\
+									</a>\
+									<a href="javascript:;" onclick="handleChatResponse( { 0: 5, 1: \'' + textJustBrowsing + '\' } )" class="btn btn-light my-1">' + textJustBrowsing.replace( '\\', '' ) + '\
 									</a>\
 								</div>\
 								<div class="col-auto">\
@@ -186,7 +193,7 @@ const typeAndReturnAntonMessage = async ( e, wait_time = 2500 ) => {
 const returnAntonMessage = async ( e ) => {
 
 	$( '#chat-anton-' + e ).find( '.chat-writing' ).hide()
-	$( '#chat-anton-' + e ).find( '.chat-anton-text' ).text( antonMessages[e] )
+	$( '#chat-anton-' + e ).find( '.chat-anton-text' ).html( antonMessages[e] )
 
 }
 
