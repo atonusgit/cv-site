@@ -94,8 +94,6 @@ window.launchChat = async () => {
 								<div class="col-auto">\
 									<img class="round-image chat-image" src="assets/img/user-circle-solid.svg">\
 								</div>\
-								<div class="col-auto">\
-								</div>\
 							</div>\
 						</div>\
 					</div>\
@@ -126,8 +124,6 @@ window.handleChatResponse = async ( e ) => {
 						<div class="col-auto">\
 							<img class="round-image chat-image" src="assets/img/user-circle-solid.svg">\
 						</div>\
-						<div class="col-auto">\
-						</div>\
 					</div>\
 				</div>\
 			</div>' )
@@ -154,7 +150,6 @@ const updateChat = async ( e, wait_time = 2500 ) => {
 								<span class="chat-anton-text"></span>\
 							</div>\
 						</div>\
-						<div class="col-lg-3"></div>\
 					</div>\
 				</div>\
 			</div>\
@@ -275,8 +270,6 @@ window.sendMessage = ( e ) => {
 									</div>\
 									<div class="col-auto">\
 										<img class="round-image chat-image" src="assets/img/user-circle-solid.svg">\
-									</div>\
-									<div class="col-lg-3">\
 									</div>\
 								</div>\
 							</div>\
