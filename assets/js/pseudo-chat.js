@@ -116,7 +116,7 @@ window.handleChatResponse = async ( e ) => {
 			'<div class="col-md-8">\
 				<div class="container">\
 					<div class="row align-items-center justify-content-end form-group">\
-						<div class="col-auto px-0">\
+						<div class="col-auto px-0 speech-bubble-container">\
 							<div class="speech-bubble speech-bubble-visitor text-light">\
 								<p class="mb-0">\
 									' + e[1] + '\
@@ -148,7 +148,7 @@ const updateChat = async ( e, wait_time = 2500 ) => {
 						<div class="col-auto">\
 							<img class="round-image chat-image" style="display: none;" src="assets/img/anton_portrait_2.jpg">\
 						</div>\
-						<div class="col-lg-auto col px-0">\
+						<div class="col-lg-auto col px-0 speech-bubble-container">\
 							<div class="speech-bubble speech-bubble-anton text-light" style="display: none;">\
 								<div class="chat-writing" style="display: none;"></div>\
 								<span class="chat-anton-text"></span>\

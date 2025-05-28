@@ -123,6 +123,11 @@ a:hover {
 	padding-top: 106px;
 }
 
+.speech-bubble-container {
+	width: auto;
+	flex: 0 0 auto;
+}
+
 .speech-bubble {
 	position: relative;
 	border-radius: .4em;
