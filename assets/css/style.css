@@ -124,8 +124,15 @@ a:hover {
 }
 
 .speech-bubble-container {
+	max-width: 310px;
 	width: auto;
 	flex: 0 0 auto;
+}
+
+@media (max-width: 576px) {
+	.speech-bubble-container {
+		max-width: 265px;
+	}
 }
 
 .speech-bubble {

@@ -27,7 +27,7 @@ if ( get( 'lang' ) == 'fi' ) {
 	var textMusic = "Muusikkoa"
 	var textProgramming = "Ohjelmoijaa"
 	var textJustBrowsing = "Selailen vain..."
-	var textTextareaPlaceholder = "Hei Anton, olen ..."
+	var textTextareaPlaceholder = "Hei Anton, nimeni on ..."
 	var textSubmit = "Lähetä"
 
 } else {
@@ -50,7 +50,7 @@ if ( get( 'lang' ) == 'fi' ) {
 	var textMusic = "A musician"
 	var textProgramming = "A programmer"
 	var textJustBrowsing = "I\\'m just browsing..."
-	var textTextareaPlaceholder = "Hi Anton, I\'m ..."
+	var textTextareaPlaceholder = "Hi Anton, my name is ..."
 	var textSubmit = "Send"
 
 }
@@ -94,7 +94,7 @@ window.launchChat = async () => {
 								<div class="col-auto">\
 									<img class="round-image chat-image" src="assets/img/user-circle-solid.svg">\
 								</div>\
-								<div class="col-lg-3">\
+								<div class="col-auto">\
 								</div>\
 							</div>\
 						</div>\
@@ -126,7 +126,7 @@ window.handleChatResponse = async ( e ) => {
 						<div class="col-auto">\
 							<img class="round-image chat-image" src="assets/img/user-circle-solid.svg">\
 						</div>\
-						<div class="col-lg-3">\
+						<div class="col-auto">\
 						</div>\
 					</div>\
 				</div>\
@@ -163,13 +163,12 @@ const updateChat = async ( e, wait_time = 2500 ) => {
 	$( '#chat-anton-' + e ).find( '.speech-bubble' ).show()
 	$( '#chat-anton-' + e ).find( '.chat-writing' ).html(
 		"<lottie-player\
-			class='mt-1'\
 			autoplay\
 			control='false'\
 			loop\
 			mode='normal'\
 			src='assets/img/lf20_mBK8iA.json'\
-			style='width: 50px; height: 40px'>\
+			style='width: 50px; height: 24px'>\
 		</lottie-player>" )
 	$( '#chat-anton-' + e ).find( '.chat-writing' ).show()
 	await typeAndReturnAntonMessage( e, wait_time )
@@ -203,9 +202,9 @@ const showContactForm = ( e ) => {
 			<div class="col-md-8">\
 				<div class="container">\
 					<div class="row align-items-center justify-content-end form-group">\
-						<div class="col-auto px-0">\
+						<div class="col-lg-3">\
 						</div>\
-						<div class="col-lg-7">\
+						<div class="col-lg-6">\
 							<form id="contact-me">\
 								<div class="form-group">\
 									<textarea\
@@ -218,6 +217,7 @@ const showContactForm = ( e ) => {
 							</form>\
 						</div>\
 						<div class="col-lg-3">\
+						</div>\
 					</div>\
 				</div>\
 			</div>\
