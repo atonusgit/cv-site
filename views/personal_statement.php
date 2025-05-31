@@ -15,7 +15,7 @@
 	<div class="container">
 		<div class="row py-5">
 			<div class="col-md-4">
-				<h2 class="appear-on-scroll"><?php
+				<h2><?php
 
 					echo $translations->header_personal_statement( isset( $_GET['lang'] ) ? $_GET['lang'] : null );
 
@@ -23,7 +23,7 @@
 				</h2>
 			</div>
 			<div class="col-md-8">
-				<div class="appear-on-scroll"><?php
+				<div><?php
 
 					echo $translations->personal_statement( isset( $_GET['lang'] ) ? $_GET['lang'] : null );
 
