@@ -189,6 +189,11 @@ a:hover {
 	margin-right: -0.625em;
 }
 
+#sendMessageButton {
+	display: flex;
+    justify-content: center;
+}
+
 .testimonials-bg {
 	background-size: cover;
 	background-image: linear-gradient(rgba(23, 162, 184, 0.95), rgba(23, 162, 184, 0.95)), url('../img/anton_recording.jpg');
