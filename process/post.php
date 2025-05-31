@@ -35,10 +35,14 @@ if ( !empty( $_POST['postToken'] )
 					break;
 
 				case '4':
-					$init_choice = 'Selailen vain...';
+					$init_choice = 'Tekoälykehittäjä';
 					break;
 
 				case '5':
+					$init_choice = 'Selailen vain...';
+					break;
+
+				case '6':
 					$init_choice = 'No JavaScript';
 					break;
 
