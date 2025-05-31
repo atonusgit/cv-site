@@ -49,7 +49,7 @@ if ( !empty( $_POST['postToken'] )
 			}
 
 			$msg = wordwrap( $message_sanitized, 70 );
-			mail( "cv@valle.fi", "Viesti CV sivulta", $init_choice . "\n\r" . $msg );
+			mail( "cv@valle.fi", "Viesti CV sivulta", "Valinta:\n" . $init_choice . "\n\rViesti:\n" . $msg );
 			unset( $_SESSION['postToken'] );
 			$response['response'] = "TRUE";
 
@@ -59,7 +59,7 @@ if ( !empty( $_POST['postToken'] )
 
 		}
 
-		if ( $_POST['initChoice'] == 5 ) {
+		if ( $_POST['initChoice'] == 6 ) {
 
 			$token = ( new Security )->getToken( 'responseToken' );
 			unset( $_SESSION['postToken'] );
