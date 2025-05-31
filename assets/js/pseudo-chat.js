@@ -230,10 +230,12 @@ const showContactForm = ( e ) => {
 window.sendMessage = ( e ) => {
 
 	let form = document.getElementById( 'contact-me' )
+	let sanitizedMessage = form.message.value.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
 	let data = {
 		action: "contact_anton",
 		initChoice: e,
-		message: form.message.value,
+		message: sanitizedMessage,
 		postToken: $( '#csrf-token' ).val(),
 	}
 
@@ -271,7 +273,7 @@ window.sendMessage = ( e ) => {
 									<div class="col px-0 d-flex justify-content-end">\
 										<div class="speech-bubble speech-bubble-visitor text-light">\
 											<p class="mb-0">\
-												' + form.message.value + '\
+												' + sanitizedMessage + '\
 											</p>\
 										</div>\
 									</div>\
