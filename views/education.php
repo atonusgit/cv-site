@@ -9,7 +9,7 @@
 $education_keys = array(
 	'education_ai_liability' => array(
 		'certificate'
-	)
+	),
 	'education_intro_to_generative_ai' => array(
 		'certificate'
 	),
