@@ -861,6 +861,88 @@ class Translations {
 
 	}
 
+	public function education_ai_liability( $part, $lang ) {
+
+		switch ( $part ) {
+
+			case 'title':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "AI Liability (Tekoälyn vastuusäännöt) - HY+";
+						break;
+
+					default:
+						return "AI Liability - HY+";
+						break;
+
+				}
+
+				break;
+
+			case 'duration':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "2025";
+						break;
+
+					default:
+						return "2025";
+						break;
+
+				}
+
+				break;
+
+			case 'description':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Kattava katsaus tekoälyn aiheuttamien vahinkojen vastuuseen liittyviin keskeisiin kohtiin.";
+						break;
+
+					default:
+						return "Comprehensive overview of the key points in relation to liability for damage caused by artificial intelligence.";
+						break;
+
+				}
+
+				break;
+
+			case 'certificate_href':
+
+				return 'https://openbadgefactory.com/v1/assertion/fda9132b6362191284cbdfc5d14680b4d94585f7';
+				break;
+
+			case 'certificate_icon':
+
+				return 'assets/img/graduation-cap-solid.svg';
+				break;
+
+			case 'certificate_text':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Avaa todistus";
+						break;
+
+					default:
+						return "Open certificate";
+						break;
+
+				}
+
+				break;
+
+		}
+
+	}
+
 	public function education_intro_to_generative_ai( $part, $lang ) {
 
 		switch ( $part ) {
