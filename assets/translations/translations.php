@@ -552,6 +552,61 @@ class Translations {
 
 	}
 
+	public function experience_sitra( $part, $lang ) {
+
+		switch ( $part ) {
+
+			case 'title':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Sitra, Johtava asiantuntija, tekoäly- ja ratkaisuarkkitehti";
+						break;
+
+					default:
+						return "Sitra, Senior Lead, AI and Solution Architect";
+						break;
+
+				}
+
+				break;
+
+			case 'duration':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "2025 - Nykyinen";
+						break;
+
+					default:
+						return "2025 - Present";
+						break;
+
+				}
+
+				break;
+
+			case 'description':
+
+				switch ( $lang ) {
+
+					case 'fi':
+						return "Tutkin ja edistän organisaation 'tekoäly ensin' -siirtymää.";
+						break;
+
+					default:
+						return "I support research and development related to the organization's 'AI first' transition.";
+						break;
+
+				}
+
+				break;
+
+		}
+	}
+
 	public function experience_evermade( $part, $lang ) {
 
 		switch ( $part ) {

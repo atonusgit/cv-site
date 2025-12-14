@@ -7,6 +7,7 @@
  */
 
 $experience_keys = array(
+	'experience_sitra' => array(),
 	'experience_evermade' => array(
 		'article'
 	),
