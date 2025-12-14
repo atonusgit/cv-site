@@ -577,11 +577,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "2020 - Nykyinen";
+						return "2020 - 2025";
 						break;
 
 					default:
-						return "2020 - Present";
+						return "2020 - 2025";
 						break;
 
 				}
@@ -593,11 +593,11 @@ class Translations {
 				switch ( $lang ) {
 
 					case 'fi':
-						return "Suunnittelin ja olen edistänyt yhtiön tekoälystrategiaa sekä kehittänyt automaatio- ja tekoälyratkaisuja, kuten <a href='https://www.evermade.fi/fi/artikkeli/autocare-automatisoitua-yllapitoa/' target='_blank'>AutoCare</a>- ja <a href='https://www.evermade.fi/story/state-of-development-at-evermade-2025/#:~:text=Fortress' target='_blank'>Fortress</a>-järjestelmät. Rakensin <a href='https://www.evermade.fi/fi/artikkeli/kun-verkkosivu-alkaa-puhua-keskusteleva-kayttoliittyma-on-taalla/' target='_blank'>keskustelevan käyttöliittymätuotteen</a> WordPressiin. Johdan 9 hengen ylläpitotiimiä, olen kouluttanut henkilöstöä ja asiakkaita tekoälyn hyödyntämisessä sekä kirjoittanut artikkeleita tekoälyn arvoista ja käytännöistä.";
+						return "Suunnittelin ja edistin yhtiön tekoälystrategiaa sekä kehitin automaatio- ja tekoälyratkaisuja, kuten <a href='https://www.evermade.fi/fi/artikkeli/autocare-automatisoitua-yllapitoa/' target='_blank'>AutoCare</a>- ja <a href='https://www.evermade.fi/story/state-of-development-at-evermade-2025/#:~:text=Fortress' target='_blank'>Fortress</a>-järjestelmät. Rakensin <a href='https://www.evermade.fi/fi/artikkeli/kun-verkkosivu-alkaa-puhua-keskusteleva-kayttoliittyma-on-taalla/' target='_blank'>keskustelevan käyttöliittymätuotteen</a> WordPressiin. Johdin 9 hengen ylläpitotiimiä, koulutin henkilöstöä ja asiakkaita tekoälyn hyödyntämisessä sekä kirjoitin artikkeleita tekoälyn käytänteistä.";
 						break;
 
 					default:
-						return "I have designed and advanced the company's AI strategy, and developed automation and AI solutions such as the <a href='https://www.evermade.fi/story/autocare-automated-maintenance/' target='_blank'>AutoCare</a> and <a href='https://www.evermade.fi/story/state-of-development-at-evermade-2025/#:~:text=Fortress' target='_blank'>Fortress</a> systems. I built a <a href='https://www.evermade.fi/fi/artikkeli/kun-verkkosivu-alkaa-puhua-keskusteleva-kayttoliittyma-on-taalla/' target='_blank'>conversational UI</a> product for WordPress. I lead a 9-person maintenance team, have trained staff and clients in leveraging AI, and written articles on the values and practical applications of artificial intelligence.";
+						return "I have designed and advanced the company's AI strategy, and developed automation and AI solutions such as the <a href='https://www.evermade.fi/story/autocare-automated-maintenance/' target='_blank'>AutoCare</a> and <a href='https://www.evermade.fi/story/state-of-development-at-evermade-2025/#:~:text=Fortress' target='_blank'>Fortress</a> systems. I built a <a href='https://www.evermade.fi/fi/artikkeli/kun-verkkosivu-alkaa-puhua-keskusteleva-kayttoliittyma-on-taalla/' target='_blank'>conversational UI</a> product for WordPress. I led a 9-person maintenance team, trained staff and clients on leveraging AI, and wrote articles about the value and practical applications of artificial intelligence.";
 						break;
 
 				}
